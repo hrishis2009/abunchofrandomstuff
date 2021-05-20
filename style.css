@@ -1,13 +1,3 @@
-body {
-  background-color:#faf0ea;
-}
-
-.header{
-  padding: 40px; 
-  text-align: center; 
-  background: #ff6714; 
-  color: #fec7a9; 
-  text-decoration: none; 
-  font-size: 75px;
-  margin: none;
-}
+body {background-color:#faf0ea; margin:0%; height: 100%;}
+.header {padding: 40px; text-align: center; background: #ff6714; color: #fec7a9; text-decoration: none; font-size: 75px; margin: none;}
+.footer {padding: 20px; text-align: center; background: #ff6714; color: #fec7a9; text-decoration: none; font-size: 50px;}
