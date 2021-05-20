@@ -1,1 +1,12 @@
+body {
+  background-color:#faf0ea;
+}
 
+.header{
+  padding: 40px; 
+  text-align: center; 
+  background: #ff6714; 
+  color: #fec7a9; 
+  text-decoration: none; 
+  font-size: 75px;
+}
