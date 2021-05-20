@@ -1,3 +1,32 @@
 body {background-color:#faf0ea; margin:0%; height: 100%;}
 .header {padding: 40px; text-align: center; background: #ff6714; color: #fec7a9; text-decoration: none; font-size: 75px; margin: none;}
 .footer {padding: 20px; text-align: center; background: #ff6714; color: #fec7a9; text-decoration: none; font-size: 50px;}
+.navigation-bar-ul {list-style-type: none; position: fixed; top: 0; width: 100%; margin: 0; padding: 0; overflow: hidden; background-color: #f55200; z-index: 5 ;}
+.navigation-bar-li {float: left; width: 20%; z-index: 5;}
+
+.navigation-bar-li a {
+  display: inline-block ;
+  color: white  ;
+  text-align: center ;
+  padding: 14px 16px ;
+  text-decoration: none ;
+  width: 100% ;
+  z-index: 5 ;
+}
+
+.navigation-bar-li a:hover {
+  background-color: lightblue ;
+  text-decoration: none ;
+  z-index: 5 ;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19) ;
+}
+
+.navigation-bar-a:hover {
+  color: cadetblue ;
+  z-index: 5 ;
+}
+
+.navigation-bar-a:active {
+  color: darkslategray;
+  z-index: 5;
+}
