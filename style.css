@@ -1,7 +1,7 @@
-body {background-color:#faf0ea; margin:0%; height: 100%;}
+body {background-color:#feeedc; margin:0%; height: 100%;}
 .header {padding: 40px; text-align: center; background: #ff6714; color: #fec7a9; text-decoration: none; font-size: 75px; margin: none;}
 .footer {padding: 20px; text-align: center; background: #ff6714; color: #fec7a9; text-decoration: none; font-size: 50px;}
-.navbar-frame {overflow: hidden; background-color: #333;}
-.navbar-frame a {float: left; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;}
-.navbar-frame a:hover {background-color: #ddd; color: black;}
-.navbar-frame a.active {background-color: #04AA6D; color: white;}
+.navbar {overflow: hidden; background-color: #e46a07;}
+.navbar a {float: left; color: #833a02; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;}
+.navbar a:hover {background-color: #feab6d; color: #833a02;}
+.navbar a.active {background-color: #ffebdc; color: #833a02;}
