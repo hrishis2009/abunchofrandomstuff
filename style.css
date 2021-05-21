@@ -1,7 +1,7 @@
 body {background-color: #feeedc; margin :0%; height: 100%;}
 img {display: block; height: auto; max-width: 100%;}
-h2 {float: center; text-decoration: none; text-align: center; color: #975102; font-family: "Alfa Slab One";}
-p {float: center; text-decoration: none; text-align: left; color: #000000; font-family: "Patua One";}
+h2 {float: center; text-decoration: none; text-align: center; color: #975102;}
+p {float: center; text-decoration: none; text-align: left; color: #000000;}
 @media screen and (max-width: 1000px) {.zigzag-page-column-66, .zigzag-page-column-33 {width: 100%; text-align: center;} img {margin: auto;}}
 .header {padding: 40px; text-align: center; background: #ff6714; color: #fec7a9; text-decoration: none; font-size: 75px; margin: none;}
 .footer {padding: 20px; text-align: center; background: #ff6714; color: #fec7a9; text-decoration: none; font-size: 50px;}
