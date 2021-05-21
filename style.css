@@ -11,7 +11,7 @@ p {float: center; text-decoration: none; text-align: left; color: #000000; font:
 .navbar-link {color: #833a02;}
 .zigzag-page {padding: 64px;}
 .zigzag-page-row:after {content: ""; display: table; clear: both}
-.zigzag-page-v1-66 {float: left !important; width: 66.66666%; padding: 20px; background-color: #feeedc; position: absolute;}
-.zigzag-page-v1-33 {float: right !important; width: 33.33333%; padding: 20px; background-color: #feeedc; position: absolute;}
+.zigzag-page-v1-66 {float: left !important; width: 66.66666%; padding: 20px; background-color: #feeedc;}
+.zigzag-page-v1-33 {float: left !important; width: 33.33333%; padding: 20px; background-color: #feeedc;}
 .zigzag-page-v2-66 {float: right !important; width: 66.66666%; padding: 20px; background-color: #fac182;}
-.zigzag-page-v2-66 {float: left !important; width: 33.33333%; padding: 20px; background-color: #fac182;}
+.zigzag-page-v2-33 {float: right !important; width: 33.33333%; padding: 20px; background-color: #fac182;}
