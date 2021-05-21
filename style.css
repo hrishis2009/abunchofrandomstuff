@@ -5,3 +5,4 @@ body {background-color:#feeedc; margin:0%; height: 100%;}
 .navbar a {float: left; color: #833a02; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;}
 .navbar a:hover {background-color: #feab6d; color: #833a02;}
 .navbar a.active {background-color: #ffebdc; color: #833a02;}
+.navbar-link {color: #833a02;}
