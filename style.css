@@ -1,7 +1,7 @@
 body {background-color:#feeedc; margin:0%; height: 100%;}
 img {display: block; height: auto; max-width: 100%;}
 @media screen & (max-width: 1000px) {
-  .zigzag-page-column-bottom, .zigzag-page-column-top {width: 100%; text-align: center;}
+  .zigzag-page-column-66, .zigzag-page-column-33 {width: 100%; text-align: center;}
   img {margin: auto;}}
 .header {padding: 40px; text-align: center; background: #ff6714; color: #fec7a9; text-decoration: none; font-size: 75px; margin: none;}
 .footer {padding: 20px; text-align: center; background: #ff6714; color: #fec7a9; text-decoration: none; font-size: 50px;}
@@ -12,5 +12,5 @@ img {display: block; height: auto; max-width: 100%;}
 .navbar-link {color: #833a02;}
 .zigzag-page {padding: 64px;}
 .zigzag-page-row:after {content: ""; display: table; clear: both}
-.zigzag-page-column-bottom {float: left; width: 66.66666%; padding: 20px;}
-.zigzag-page-column-top {float: left; width: 33.33333%; padding: 20px;}
+.zigzag-page-column-66 {float: left; width: 66.66666%; padding: 20px;}
+.zigzag-page-column-33 {float: left; width: 33.33333%; padding: 20px;}
