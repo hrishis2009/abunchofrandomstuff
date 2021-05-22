@@ -3,7 +3,7 @@ img {display: block; height: auto; max-width: 100%;}
 h2 {float: center; text-decoration: none; text-align: center; color: #975102; font: "Arial"}
 p {float: center; text-decoration: none; text-align: left; color: #000000; font: "Arial"}
 .header {padding: 40px; text-align: center; background: #ff6714; color: #fec7a9; text-decoration: none; font-size: 75px; margin: none; font-family: "Alfa Slab One";}
-.footer {padding: 20px; text-align: center; background: #ff6714; color: #fec7a9; text-decoration: none; font-size: 50px; font-family: "Alfa Slab One";}
+.footer {padding: 20px; text-align: center; background: #ff6714; color: #fec7a9; text-decoration: none; font-size: 50px; margin: none; font-family: "Alfa Slab One";}
 .navbar {overflow: hidden; background-color: #e46a07; z-index: 10; position: sticky;}
 .navbar a {float: left; color: #833a02; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px; position: sticky;}
 .navbar a:hover {background-color: #feab6d; color: #833a02; position: sticky;}
