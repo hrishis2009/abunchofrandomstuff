@@ -12,7 +12,7 @@
         <div class="header">
             <h1 class="header">Home</h1>
         </div>
-        <div class="navbar">
+        <div class="navbar" id="navbar">
             <a class="navbar-link" href="#">
                  <i class="fa fa-home"></i>Home
             </a>
@@ -46,13 +46,10 @@
             var sticky = navbar.offsetTop;
             function myFunction() {
                 if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
+                navbar.classList.add("navbar.sticky")
                 } else {
-                    navbar.classList.remove("sticky");
+                    navbar.classList.remove("navbar.sticky");
                        }
-                }
-            function myFunction() {
-                alert("Fucntion success");
             }
         </script>
         <div class="stripe-pattern">
