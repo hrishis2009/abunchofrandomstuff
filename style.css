@@ -11,9 +11,9 @@ p {float: center; text-decoration: none; text-align: left; color: #ffffff; font:
 .navbar a:hover {background-color: rgba(0,0,0,.9); color: #ffffff; position: sticky;}
 .navbar a.active {background-color: rgba(0,0,0,.9); color: #ffffff; position: sticky;}
 .navbar-link {color: #ffffff; position: sticky;}
+.navbar-sticky {position: fixed; top: 0; width: 100%;}
+.navbar-sticky + .navbar-link {padding-top: 60px;}
 .stripe-pattern {padding: 64px;}
 .stripe-pattern-row:after {content: ""; display: table; clear: both;}
 .stripe-pattern-column-66 {float: left; width: 66.66666%; padding: 20px;}
 .stripe-pattern-column-33 {float: left; width: 33.33333%; padding: 20px;}
-.navbar-sticky {position: fixed; top: 0; width: 100%;}
-.navbar-sticky + .navbar-link {padding-top: 60px;}
