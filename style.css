@@ -11,6 +11,6 @@ p {float: center; text-decoration: none; text-align: left; color: #000000; font:
 .navbar-link {color: #833a02; position: sticky;}
 .stripe-pattern {padding: 64px;}
 .stripe-pattern-row:after {content: ""; display: table; clear: both;}
-.stripe pattern-column-66 {float: left; width: 66.66666%; padding: 20px;}
+.stripe-pattern-column-66 {float: left; width: 66.66666%; padding: 20px;}
 .stripe-pattern-column-33 {float: left; width: 33.33333%; padding: 20px;}
 @media screen and (max-width: 1000px) {.stripe-pattern-column-66, .stripe-pattern-column-33 {width: 100%; text-align: center;} img {margin: auto;}}
