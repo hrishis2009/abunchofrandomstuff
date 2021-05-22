@@ -1,16 +1,16 @@
 * {box-sizing:border-box;}
-body {background-color: #191919; margin :0%; height: 100%;}
+body {background-color: #333333; margin :0%; height: 100%;}
 img {display: block; height: auto; max-width: 100%;}
-h2 {float: center; text-decoration: none; text-align: center; color: #975102; font: "Arial"}
-p {float: center; text-decoration: none; text-align: left; color: #000000; font: "Arial"}
+h2 {float: center; text-decoration: none; text-align: center; color: #ffffff; font: "Arial"}
+p {float: center; text-decoration: none; text-align: left; color: #ffffff; font: "Arial"}
 @media screen and (max-width: 500px) {.stripe-pattern-column-66, .stripe-pattern-column-33 {width: 100%; text-align: center;} img {margin: auto;}}
-.header {padding: 40px; text-align: center; background: #ff6714; color: #fec7a9; text-decoration: none; font-size: 75px; margin: none; font-family: "Alfa Slab One";}
-.footer {padding: 20px; text-align: center; background: #ff6714; color: #fec7a9; text-decoration: none; font-size: 50px; margin: none; font-family: "Alfa Slab One";}
-.navbar {overflow: hidden; background-color: #e46a07; z-index: 10; position: sticky;}
-.navbar a {float: left; color: #833a02; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px; position: sticky;}
-.navbar a:hover {background-color: #feab6d; color: #833a02; position: sticky;}
-.navbar a.active {background-color: #ffebdc; color: #833a02; position: sticky;}
-.navbar-link {color: #833a02; position: sticky;}
+.header {padding: 40px; text-align: center; background: #191919; color: #fec7a9; text-decoration: none; font-size: 75px; margin: none; font-family: "Alfa Slab One";}
+.footer {padding: 20px; text-align: center; background: #191919; color: #fec7a9; text-decoration: none; font-size: 50px; margin: none; font-family: "Alfa Slab One";}
+.navbar {overflow: hidden; background-color: #000000; z-index: 10; position: sticky;}
+.navbar a {float: left; color: #000000; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px; position: sticky;}
+.navbar a:hover {background-color: #191919; color: #ffffff; position: sticky;}
+.navbar a.active {background-color: #191919; color: #ffffff; position: sticky;}
+.navbar-link {color: #ffffff; position: sticky;}
 .stripe-pattern {padding: 64px;}
 .stripe-pattern-row:after {content: ""; display: table; clear: both;}
 .stripe-pattern-column-66 {float: left; width: 66.66666%; padding: 20px;}
