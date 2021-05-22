@@ -4,10 +4,10 @@ img {display: block; height: auto; max-width: 100%;}
 h2 {float: center; text-decoration: none; text-align: center; color: #ffffff; font: "Arial"}
 p {float: center; text-decoration: none; text-align: left; color: #ffffff; font: "Arial"}
 @media screen and (max-width: 500px) {.stripe-pattern-column-66, .stripe-pattern-column-33 {width: 100%; text-align: center;} img {margin: auto;}}
-.header {padding: 40px; text-align: center; background: #191919; color: #fec7a9; text-decoration: none; font-size: 75px; margin: none; font-family: "Alfa Slab One";}
-.footer {padding: 20px; text-align: center; background: #191919; color: #fec7a9; text-decoration: none; font-size: 50px; margin: none; font-family: "Alfa Slab One";}
+.header {padding: 40px; text-align: center; background: #191919; color: #ffffff; text-decoration: none; font-size: 75px; margin: none; font-family: "Alfa Slab One";}
+.footer {padding: 20px; text-align: center; background: #191919; color: #ffffff; text-decoration: none; font-size: 50px; margin: none; font-family: "Alfa Slab One";}
 .navbar {overflow: hidden; background-color: #000000; z-index: 10; position: sticky;}
-.navbar a {float: left; color: #000000; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px; position: sticky;}
+.navbar a {float: left; color: #ffffff; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px; position: sticky;}
 .navbar a:hover {background-color: #191919; color: #ffffff; position: sticky;}
 .navbar a.active {background-color: #191919; color: #ffffff; position: sticky;}
 .navbar-link {color: #ffffff; position: sticky;}
