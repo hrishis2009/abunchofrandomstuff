@@ -3,6 +3,7 @@
     <head>
         <title>Home - A Bunch of Random Stuff</title>
         <meta charset="utf-8">
+        <script s
         <link rel="stylesheet" href="https://shanmuga1980.github.io/abunchofrandomstuff/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa Slab One">
         <link rel="stylesheet" href="https://fonts.googleeapis.com/css?family=Arial">
@@ -43,12 +44,16 @@
             </a>
         </div>
         <script>
-            window.onscroll = function() {myFunction()};
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
-            function myFunction() {
-                if (window.pageYOffset >= sticky) {navbar.classList.add("navbar-sticky")} 
-                else {navbar.classList.remove("navbar-sticky");}}
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-50px";
+        }
+        prevScrollpos = currentScrollPos;
+        }
         </script>
         <div class="stripe-pattern">
             <div class="stripe-pattern-row">
