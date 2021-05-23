@@ -6,7 +6,7 @@ p {float: center; text-decoration: none; text-align: left; color: #ffffff; font:
 @media screen and (max-width: 500px) {.stripe-pattern-column-66, .stripe-pattern-column-33 {width: 100%; text-align: center;} img {margin: auto;}}
 .header {padding: 40px; text-align: center; background: #191919; color: #ffffff; text-decoration: none; font-size: 75px; margin: none; font-family: "Alfa Slab One";}
 .footer {padding: 20px; text-align: center; background: #191919; color: #ffffff; text-decoration: none; font-size: 50px; margin: none; font-family: "Alfa Slab One";}
-.navbar {overflow: hidden; background-color: opacity: 0.9; z-index: 10; transition: top 0.3s;}
+.navbar {overflow: hidden; background-color: opacity: 0.9; z-index: 10; transition: 0.3s;}
 .navbar a {float: left; color: #ffffff; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;}
 .navbar a:hover {background-color: opacity: 0.9; color: #ffffff;}
 .navbar a.active {background-color: opacity: 0.9); color: #ffffff;}
