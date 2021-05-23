@@ -9,7 +9,7 @@ p {float: center; text-decoration: none; text-align: left; color: #ffffff; font:
 .navbar {overflow: hidden; background-color: opacity: 0.9; z-index: 10;}
 .navbar a {float: left; color: #ffffff; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;}
 .navbar a:hover {background-color: opacity: 0.9; color: #ffffff;}
-.navbar a.active {background-color: opacity: 0.9); color: #ffffff;}
+.navbar a.active {background-color: opacity: 0.9; color: #ffffff;}
 .navbar-link {color: #ffffff;}
 .navbar-sticky {position: fixed; top: 0; width: 100%;}
 .stripe-pattern {padding: 64px;}
