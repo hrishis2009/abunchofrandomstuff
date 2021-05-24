@@ -16,7 +16,7 @@ p {float: center; text-decoration: none; text-align: left; color: #ffffff; font:
 .subnav {float: left; overflow: hidden;}
 .subnav .subnavbtn {font-size: 16px;  border: none; outline: none; color: #ffffff; padding: 14px 16px; background-color: #000000; margin: 0;}
 .navbar a:hover, .subnav:hover .subnavbtn {background-color: #ffffff;}
-.subnav-content {display: none; position: absolute; left: 0; background-color: #ffffff; width: 100%; z-index: 1;}
+.subnav-content {display: none; position: absolute; left: 0; background-color: #ffffff; width: 100%; z-index: 11;}
 .subnav-content a {float: left; color: #000000; text-decoration: none;}
 .subnav-content a:hover {background-color: #ffffff; color: #000000;}
 .subnav:hover .subnav-content {display: block;}
