@@ -14,7 +14,7 @@ p {float: center; text-decoration: none; text-align: left; color: #ffffff; font:
 .subnav-content {display: none; position: absolute; left: 0; background-color: #ffffff; width: 100%; z-index: 1;}
 .subnav-content a {float: left; color: #ffffff; text-decoration: none;}
 .subnav-content a:hover {background-color: #ffffff; color: #000000;}
-.subnav:hover .subnav-content {display: block;}
+.subnavbtn:hover .subnav-content {display: block;}
 .stripe-pattern {padding: 64px;}
 .stripe-pattern-row::after {content: ""; display: table; clear: both;}
 .stripe-pattern-column-66 {float: left; width: 66.66666%; padding: 20px;}
