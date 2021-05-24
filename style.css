@@ -10,7 +10,7 @@ p {float: center; text-decoration: none; text-align: left; color: #ffffff; font:
 .navbar a {float: left; color: #ffffff; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;}
 .navbar-sticky {position: fixed; top: 0; width: 100%;}
 .subnavbar {float: left; overflow: hidden;}
-.subnavbar .subnavlink {font-size: 16px; border: none; outline: none; color: #ffffff; padding: 14px 16px; background-color: inherit; margin: 0;}
+.subnavbar .subnavlink {float: left; color: #ffffff; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;}
 .subnavbar-content {display: none; position: absolute; left: 0; background-color: #191919; width: 100%; z-index: 10;}
 .subnavbar-content a {float: left; color: #ffffff; text-decoration: none;}
 .subnavbar:hover .subnavbar-content {display: block;}
