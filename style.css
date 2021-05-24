@@ -6,9 +6,14 @@ p {float: center; text-decoration: none; text-align: left; color: #ffffff; font:
 @media screen and (max-width: 500px) {.stripe-pattern-column-66, .stripe-pattern-column-33 {width: 100%; text-align: center;} img {margin: auto;}}
 .header {padding: 40px; text-align: center; background: #191919; color: #ffffff; text-decoration: none; font-size: 75px; margin: none; font-family: "Alfa Slab One";}
 .footer {padding: 20px; text-align: center; background: #191919; color: #ffffff; text-decoration: none; font-size: 50px; margin: none; font-family: "Alfa Slab One";}
-.navbar {overflow: hidden; background-color: #000000; opacity:0.9; z-index: 10;}
+.navbar {overflow: hidden; background-color: opacity:0.9; position: fixed; top: 0; width: 100%; display: block; transition: top 0.3s; z-index: 10;}
 .navbar a {float: left; color: #ffffff; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;}
 .navbar-sticky {position: fixed; top: 0; width: 100%;}
+.subnavbar {float: left; overflow: hidden;}
+.subnavbar .subnavlink {font-size: 16px; border: none; outline: none; color: #ffffff; padding: 14px 16px; background-color: inherit; margin: 0;}
+.subnavbar-content {display: none; position: absolute; left: 0; background-color: #191919; width: 100%; z-index: 10;}
+.subnavbar-content a {float: left; color: #ffffff; text-decoration: none;}
+.subnavbar:hover .subnavbar-content {display: block;}
 .stripe-pattern {padding: 64px;}
 .stripe-pattern-row::after {content: ""; display: table; clear: both;}
 .stripe-pattern-column-66 {float: left; width: 66.66666%; padding: 20px;}
