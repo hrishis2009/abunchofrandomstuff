@@ -14,6 +14,6 @@ function naventer(x) {
 }
 
 function navleave(x) {
-  x.style.animation = "mouseleave 0.75s 1";
+  x.style.animation = "mouseleave 0.45s 1";
   x.style.animationFillMode = "forwards";
 }
