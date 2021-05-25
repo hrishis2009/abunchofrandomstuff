@@ -1,4 +1,5 @@
 var prevScrollpos = window.pageYOffset;
+
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
@@ -8,6 +9,7 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
+
 function naventer(x) {
   x.style.animation = "mouseenter 0.75s 1";
   x.style.animationFillMode = "forwards";
@@ -16,4 +18,16 @@ function naventer(x) {
 function navleave(x) {
   x.style.animation = "mouseleave 0.45s 1";
   x.style.animationFillMode = "forwards";
+}
+
+function subnaventer(x) {
+  x.style.visibility = "visible";
+  document.getElementById("subnavbarbutton").style.animation = "mouseeenter 0.75s 1";
+  document.getElementById("subnavbarbutton").style.animationFillMode = "forwards";
+}
+
+function subnavleave(x) {
+  x.style.visibility = "hidden";
+  document.getElementById("subnavbarbutton").style.animation = "mouseleave 0.45s 1";
+  document.getElementById("subnavbarbutton").style.animationFillMode = "forwards";
 }
