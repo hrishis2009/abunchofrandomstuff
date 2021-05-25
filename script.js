@@ -19,15 +19,3 @@ function navleave(x) {
   x.style.animation = "mouseleave 0.45s 1";
   x.style.animationFillMode = "forwards";
 }
-
-function subnaventer(x) {
-  x.style.visibility = "visible";
-  document.getElementById("subnavbarbutton").style.animation = "mouseeenter 0.75s 1";
-  document.getElementById("subnavbarbutton").style.animationFillMode = "forwards";
-}
-
-function subnavleave(x) {
-  x.style.visibility = "hidden";
-  document.getElementById("subnavbarbutton").style.animation = "mouseleave 0.45s 1";
-  document.getElementById("subnavbarbutton").style.animationFillMode = "forwards";
-}
