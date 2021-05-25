@@ -8,3 +8,12 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
+function naventer(x) {
+  x.style.animation = "mouseenter 0.75s 1";
+  x.style.animationFillMode = "forwards";
+}
+
+function navleave(x) {
+  x.style.animation = "mouseleave 0.75s 1";
+  x.style.animationFillMode = "forwards";
+}
