@@ -13,10 +13,10 @@ p {float: center; text-decoration: none; text-align: left; color: #ffffff; font:
 @keyframes mouseleave {0% {border: 5px solid #ffffff;} 100% {border: 5px solid #000000;}}
 .subnav {float: left; overflow: hidden;}
 .subnav .subnavbtn {font-size: 16px; border: 5px solid #000000; outline: none; color: #ffffff; padding: 14px 16px; background-color: transparent; margin: 0px; animation: none; animation-fill-mode: none;}
-.subnav-content {visibility: hidden; display: none; position: absolute; left: 0; background-color: transparent; width: 100%; z-index: 1;}
+.subnav-content {display: none; position: absolute; left: 0; background-color: transparent; width: 100%; z-index: 1;}
 .subnav-content a {float: left; color: #ffffff; text-decoration: none; border: 5px solid #000000;}
 .subnav-content a:hover, .nav a:hover {animation: none; animation-fill-mode: none;}
-.subnavbtn:hover .subnav-content {visibility: visible; display: block;}
+.subnavbtn:hover .subnav-content {display: block;}
 .stripe-pattern {padding: 64px;}
 .stripe-pattern-row::after {content: ""; display: table; clear: both;}
 .stripe-pattern-column-66 {float: left; width: 66.66666%; padding: 20px;}
