@@ -31,16 +31,3 @@ function subnavleave(x) {
   document.getElementById("subnavbarbutton").style.animation = "mouseleave 0.45s 1";
   document.getElementById("subnavbarbutton").style.animationFillMode = "forwards";
 }
-
-function showsubnav(x) {
-  x.style.animation = "mouseenter 0.75s 1";
-  x.style.animationFillMode = "forwards";
-  document.getElementById("subnavContent").style.top = document.getElementById("navbar").offsetHeight;
-}
-
-function hidesubnav(x) {
-  x.style.animation = "mouseleave 0.75s 1";
-  x.style.animationFillMode = "forwards";
-  document.getElementById("subnavContent").style.top = "0";
-}
-  
