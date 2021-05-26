@@ -16,7 +16,7 @@ p {float: center; text-decoration: none; text-align: left; color: #ffffff; font:
 .subnav-content {visibility: hidden; display: none; position: absolute; left: 0; background-color: transparent; width: 100%; z-index: 1;}
 .subnav-content a {float: left; color: #ffffff; text-decoration: none; border: 5px solid #000000;}
 .subnav-content a:hover, .nav a:hover {animation: none; animation-fill-mode: none;}
-.subnav:hover .subnav-content {display: block;}
+.subnavbtn:hover .subnav-content {visibility: visible; display: block;}
 .stripe-pattern {padding: 64px;}
 .stripe-pattern-row::after {content: ""; display: table; clear: both;}
 .stripe-pattern-column-66 {float: left; width: 66.66666%; padding: 20px;}
