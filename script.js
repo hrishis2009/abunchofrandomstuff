@@ -23,3 +23,4 @@ function navleave(x) {
 
 if (screenwidth < 850) {
   document.getElementById("navitem1").innerHTML = "<i class="fa fa-home"></i>";
+}
