@@ -27,11 +27,11 @@
             </a>
             <div class="subnav">
                 <a class="subnavbtn"
-                   onmouseenter="showsubnav" onmmouseleave="hidesubnav">
+                   onmouseenter="showsubnav(this)" onmmouseleave="hidesubnav(this)">
                     <i class="fas fa-book-reader"></i>
                     Articles
                 </a>
-                <div class="subnav-content">
+                <div class="subnav-content" id="subnavContent">
                     <a href="#" 
                        onmouseenter="naventer(this)" onmouseleave="navleave(this)">
                         <i class="fa fa-atlas"></i>
