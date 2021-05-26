@@ -34,11 +34,13 @@ function subnavleave(x) {
 
 function showsubnav(x) {
   x.style.animation = "mouseenter 0.75s 1";
+  x.style.animationFillMode = "forwards";
   document.getElementById("subnavContent").style.top = document.getElementById("navbar").offsetHeight;
 }
 
 function hidesubnav(x) {
   x.style.animation = "mouseleave 0.75s 1";
+  x.style.animationFillMode = "forwards";
   document.getElementById("subnavContent").style.top = "0";
 }
   
