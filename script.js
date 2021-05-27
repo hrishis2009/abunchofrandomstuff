@@ -31,9 +31,3 @@ function subnavleave(x) {
   document.getElementById("subnavbarbutton").style.animation = "mouseleave 0.45s 1";
   document.getElementById("subnavbarbutton").style.animationFillMode = "forwards";
 }
-
-function subnavleave(x) {
-  x.style.visibility = "hidden";
-  document.getElementById("subnavbarbutton").style.animation = "mouseleave 0.45s 1";
-  document.getElementById("subnavbarbutton").style.animationFillMode = "forwards";
-}
