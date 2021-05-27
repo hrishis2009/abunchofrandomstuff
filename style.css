@@ -1,24 +1,24 @@
 @charset "utf-8";
-*{box-sizing:border-box;}
-body{background-color:#333333;margin:0%;height:100%;}
-img{display:block;height:auto;max-width:100%;}
-h2{float:center;text-decoration:none;text-align:center;color:#ffffff;font:"Arial"}
-p{float:center;text-decoration:none;text-align:left;color:#ffffff;font:"Arial"}
-@media screen and (max-width: 500px){.stripe-pattern-column-66,.stripe-pattern-column-33{width:100%;text-align:center;}img{margin:auto;}}
-.header{padding:40px;text-align:center;background:#191919;color:#ffffff;text-decoration:none; font-size:75px;margin:none;font-family:"Alfa Slab One";}
-.footer{padding:20px;text-align:center;background:#191919;color: #ffffff;text-decoration:none;font-size:50px;margin:none;font-family:"Alfa Slab One";}
-.nav{overflow:hidden;background-color:#000000;}
-.nav a{float:left;font-size:16px;color:#ffffff;text-align:center;padding:14px 16px;text-decoration:none;background-color:#000000}
-.nav-right{float:right!important;}
-@keyframes mouseenter{/*fill in*/}
-@keyframes mouseleave{/*fill in*/}
-.subnav{float:left;overflow:hidden;}
-.subnav .subnavbtn{font-size:16px;color:#ffffff;padding:14px 16px;background-color:#000000;margin:0;}
-.subnav-content{display:none;position:absolute;left:0;background-color:#000000;width:100%;z-index:1;}
-.subnav-content a{float:left;color:#ffffff;text-decoration:none;}
-.subnav-content a:hover{background-color:#000000;color:#ffffff;}
-.subnav:hover .subnav-content {display:block;}
-.stripe-pattern{padding:64px;}
-.stripe-pattern-row::after{content:"";display:table;clear:both;}
-.stripe-pattern-column-66{float:left;width:66.66666%;padding:20px;}
-.stripe-pattern-column-33{float:left;width:33.33333%;padding:20px;}
+* {box-sizing:border-box;}
+body {background-color: #333333; margin :0%; height: 100%;}
+img {display: block; height: auto; max-width: 100%;}
+h2 {float: center; text-decoration: none; text-align: center; color: #ffffff; font: "Arial"}
+p {float: center; text-decoration: none; text-align: left; color: #ffffff; font: "Arial"}
+@media screen and (max-width: 500px) {.stripe-pattern-column-66, .stripe-pattern-column-33 {width: 100%; text-align: center;} img {margin: auto;}}
+.header {padding: 40px; text-align: center; background: #191919; color: #ffffff; text-decoration: none; font-size: 75px; margin: none; font-family: "Alfa Slab One";}
+.footer {padding: 20px; text-align: center; background: #191919; color: #ffffff; text-decoration: none; font-size: 50px; margin: none; font-family: "Alfa Slab One";}
+.nav {overflow: hidden; background-color: #000000; opacity: 0.9; position: fixed; top: 0; width: 100%; display: block; transition: top 0.3s;}
+.nav a {float: left; color: #ffffff; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px; border: 5px solid #000000;}
+@keyframes mouseenter {0% {border: 5px solid #000000;} 100% {border: 5px solid #ffffff;}}
+@keyframes mouseleave {0% {border: 5px solid #ffffff;} 100% {border: 5px solid #000000;}}
+.subnav {float: left; overflow: hidden;}
+.subnav .subnavbtn {font-size: 16px; border: 5px solid #000000; outline: none; color: #ffffff; padding: 14px 16px; background-color: inherit; font-family: inherit; margin: 0;}
+.subnav-content {display: none; position: absolute; left: 0; background-color: #000000; width: 100%; z-index: 1;}
+.subnav-content a {float: left; color: #ffffff; text-decoration: none;}
+.subnav-content a:hover {background-color: #000000; color: #ffffff;}
+.subnav:hover+.subnav-content {display: block;}
+.stripe-pattern {padding: 64px;}
+.stripe-pattern-row::after {content: ""; display: table; clear: both;}
+.stripe-pattern-column-66 {float: left; width: 66.66666%; padding: 20px;}
+.stripe-pattern-column-33 {float: left; width: 33.33333%; padding: 20px;}
+.dark {background-color: #191919;}
