@@ -32,6 +32,12 @@ function subnavleave(x) {
   document.getElementById("subnavbarbutton").style.animationFillMode = "forwards";
 }
 
+function subnavleave(x) {
+  x.style.visibility = "hidden";
+  document.getElementById("subnavbarbutton").style.animation = "mouseleave 0.45s 1";
+  document.getElementById("subnavbarbutton").style.animationFillMode = "forwards";
+}
+
 var y = document.getElementById("geolocationbtn");
 function getLocation()
   {
@@ -42,24 +48,15 @@ function getLocation()
   else{x.innerHTML="Geolocation is not supported by this browser.";}
   }
 
-function showPosition(position)
-  {
+function showPosition(position) {
   var lat = position.coords.latitude;
   var lon = position.coords.longitude;
-  var latlon = new google.maps.LatLng(lat, lon)
+  var latlon = new mapquest.maps.LatLng(lat, lon)
   var mapholder = document.getElementById("mapholder")
-  mapholder.style.height='250px';
-  mapholder.style.width='100%';
-
-  var myOptions = {
-  center:latlon,zoom:14,
-  mapTypeId:google.maps.MapTypeId.ROADMAP,
-  mapTypeControl:false,
-  navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
-  };
-  var map = new google.maps.Map(document.getElementById("mapholder"),myOptions);
-  var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
-  }
+  mapholder.style.height = "250px";
+  mapholder.style.width = "100%";
+  mapholder.src = "https://www.mapquest.com/latlng/" + lat + "," + lon = "?zoom=0"
+}
 
 function showError(error)
   {
