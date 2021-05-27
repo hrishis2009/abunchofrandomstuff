@@ -7,8 +7,9 @@ p{float:center;text-decoration:none;text-align:left;color:#ffffff;font:"Arial"}
 @media screen and (max-width: 500px){.stripe-pattern-column-66,.stripe-pattern-column-33{width:100%;text-align:center;}img{margin:auto;}}
 .header{padding:40px;text-align:center;background:#191919;color:#ffffff;text-decoration:none; font-size:75px;margin:none;font-family:"Alfa Slab One";}
 .footer{padding:20px;text-align:center;background:#191919;color: #ffffff;text-decoration:none;font-size:50px;margin:none;font-family:"Alfa Slab One";}
-.nav{overflow:hidden;background-color:#000000;opacity:0.9;position:fixed;top:0;width:100%;display:block;transition:0.3s top;}
-.nav a {float:left;color:#ffffff;text-align:center;padding:14px 16px;text-decoration:none;font-size:17px;border:5px solid #000000;}
+.nav{overflow:hidden;background-color:#000000; }
+.nav a{float:left;font-size:16px;color:#ffffff;text-align:center;padding:14px 16px;text-decoration:none;}
+.nav-right{float:right !important;}
 @keyframes mouseenter{0%{border:5px solid #000000;}100%{border:5px solid #ffffff;}}
 @keyframes mouseleave{0%{border:5px solid #ffffff;}100%{border:5px solid #000000;}}
 .subnav{float:left;overflow:hidden;}
