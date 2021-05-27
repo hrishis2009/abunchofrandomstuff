@@ -38,25 +38,13 @@ function subnavleave(x) {
   document.getElementById("subnavbarbutton").style.animationFillMode = "forwards";
 }
 
-var y = document.getElementById("geolocationbtn");
-function getLocation()
-  {
-  if (navigator.geolocation)
-    {
-    navigator.geolocation.getCurrentPosition(showPosition,showError);
-    }
-  else{x.innerHTML="Geolocation is not supported by this browser.";}
-  }
-
-function showPosition(position) {
-  var lat = position.coords.latitude;
-  var lon = position.coords.longitude;
-  var latlon = new mapquest.maps.LatLng(lat, lon)
-  var mapholder = document.getElementById("mapholder")
-  mapholder.style.height = "250px";
-  mapholder.style.width = "100%";
-  mapholder.src = "https://www.mapquest.com/latlng/" + lat + "," + lon = "?zoom=0"
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+  } else { 
+    document.getElemenById("mapholder").innerHTML = "https://www.google.com/maps/place//@" + position.coords.lattitude + "," + position.coords.longitude + ",17z"
 }
+
 
 function showError(error)
   {
