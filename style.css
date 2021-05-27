@@ -9,7 +9,7 @@ p{float:center;text-decoration:none;text-align:left;color:#ffffff;font:"Arial"}
 .footer{padding:20px;text-align:center;background:#191919;color: #ffffff;text-decoration:none;font-size:50px;margin:none;font-family:"Alfa Slab One";}
 .nav{overflow:hidden;background-color:#000000; }
 .nav a{float:left;font-size:16px;color:#ffffff;text-align:center;padding:14px 16px;text-decoration:none;}
-.nav-right{float:right !important;}
+.nav-right{float:right!important;}
 @keyframes mouseenter{0%{border:5px solid #000000;}100%{border:5px solid #ffffff;}}
 @keyframes mouseleave{0%{border:5px solid #ffffff;}100%{border:5px solid #000000;}}
 .subnav{float:left;overflow:hidden;}
