@@ -37,29 +37,3 @@ function subnavleave(x) {
   document.getElementById("subnavbarbutton").style.animation = "mouseleave 0.45s 1";
   document.getElementById("subnavbarbutton").style.animationFillMode = "forwards";
 }
-
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition, showError);
-  } else { 
-    document.getElemenById("mapholder").src = "https://www.google.com/maps/place//@" + position.coords.lattitude + "," + position.coords.longitude + ",17z"
-}
-
-function showError(error)
-  {
-  switch(error.code) 
-    {
-    case error.PERMISSION_DENIED:
-      document.getElemenById("mapholder").alt = "User denied the request for Geolocation."
-      break;
-    case error.POSITION_UNAVAILABLE:
-      document.getElemenById("mapholder").alt = "Location information is unavailable."
-      break;
-    case error.TIMEOUT:
-      document.getElemenById("mapholder").alt =" The request to get user location timed out."
-      break;
-    case error.UNKNOWN_ERROR:
-      document.getElemenById("mapholder").alt = "An unknown error occurred."
-      break;
-    }
-  }
