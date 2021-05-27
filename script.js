@@ -51,16 +51,16 @@ function showError(error)
   switch(error.code) 
     {
     case error.PERMISSION_DENIED:
-      y.innerHTML = "User denied the request for Geolocation."
+      document.getElemenById("mapholder").innerHTML = "User denied the request for Geolocation."
       break;
     case error.POSITION_UNAVAILABLE:
-      y.innerHTML = "Location information is unavailable."
+      document.getElemenById("mapholder").innerHTML = "Location information is unavailable."
       break;
     case error.TIMEOUT:
-      y.innerHTML =" The request to get user location timed out."
+      document.getElemenById("mapholder").innerHTML =" The request to get user location timed out."
       break;
     case error.UNKNOWN_ERROR:
-      y.innerHTML = "An unknown error occurred."
+      document.getElemenById("mapholder").innerHTML = "An unknown error occurred."
       break;
     }
   }
