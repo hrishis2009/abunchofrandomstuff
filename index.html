@@ -11,12 +11,17 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     </head>
     <body>
+        <div class="header">
+            <h1 class="header">Home</h1>
+        </div>
         <div class="nav" id="navbar">
-            <a href="#">
+            <a href="#" 
+               onmouseenter="naventer(this)" onmouseleave="navleave(this)">
                 <i class="fa fa-home"></i>
                 Home
             </a>
-            <a href="#">
+            <a href="#" 
+               onmouseenter="naventer(this)" onmouseleave="navleave(this)">
                 <i class="fas fa-newspaper"></i>
                 Minis
             </a>
@@ -26,31 +31,32 @@
                     Articles
                 </a>
                 <div class="subnav-content">
-                    <a href="#">
+                    <a href="#" 
+                       onmouseenter="naventer(this)" onmouseleave="navleave(this)">
                         <i class="fa fa-atlas"></i>
                         Geography & History
                         <i class="fa fa-landmark"></i>
                     </a>
-                    <a href="#">
+                    <a href="#" 
+                       onmouseenter="naventer(this)" onmouseleave="navleave(this)">
                         <i class="fa fa-plane"></i>
                         Travel & Space
                         <i class="fas fa-user-astronaut"></i>
                     </a>
-                    <a href="#">
+                    <a href="#" 
+                       onmouseenter="naventer(this)" onmouseleave="navleave(this)">
                         <i class="fas fa-microchip"></i>
                         Tech & Nature
                         <i class="fas fa-leaf"></i>
                     </a>
-                    <a href="#">
+                    <a href="#" 
+                       onmouseenter="naventer(this)" onmouseleave="navleave(this)">
                         <i class="fas fa-user-tie"></i>
                         Business & Economics
                         <i class="fas fa-chart-line"></i>
                     </a>
                 </div>
             </div>
-        </div>
-        <div class="header">
-            <h1 class="header">Home</h1>
         </div>
         <div class="stripe-pattern">
             <div class="stripe-pattern-row">
@@ -60,6 +66,18 @@
                 </div>
                 <div class="stripe-pattern-column-33">
                     <p>Image of the logo of this website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="stripe-pattern dark">
+            <div class="stripe-pattern-row">
+                <div class="stripe-pattern-column-33">
+                    <p><button onclick="getLocation()">Try It</button></p>
+                    <iframe id="mapholder"src="https://www.mapquest.com/" >
+                </div>
+                <div class="stripe-pattern-column-66">
+                    <h2>A Breif Preview</h2>
+                    <p>Include facts and a map of their location and date of access, and for the date, include a calendar. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
         </div>
