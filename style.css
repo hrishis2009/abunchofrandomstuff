@@ -1,6 +1,7 @@
 @charset"utf-8";
 @media screen and (max-width: 500px){.stripe-pattern-column-66,.stripe-pattern-column-33{width:100%;text-align:center;}img{margin:auto;}}
 *{box-sizing:border-box;}
+html{font-size:16px;}
 body{background-color:#333333;margin:0%;height:100%;}
 img{display:block;height:auto;max-width:100%;}
 h2,p{float:center;text-decoration:none;color:#ffffff;font:Arial}
