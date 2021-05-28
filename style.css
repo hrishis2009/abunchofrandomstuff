@@ -14,7 +14,7 @@ p{text-align:left;}
 .nav-background,.nav{background-color:#000000;margin:0px;}
 .header,.footer,.dark{background-color:#191919;}
 .header,.footer,.nav-item a{color:#ffffff;text-decoration:none;font-family:Helvetica;}
-.header,.footer{font-size:75px;margin:none;}
+.header,.footer{font-size:50px;margin:none;}
 .header{padding:40px;}
 .footer{padding:20px;}
 .stripe-pattern{padding:64px;}
