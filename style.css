@@ -7,20 +7,20 @@ img{display:block;height:auto;max-width:100%;}
 h2,p{float:center;text-decoration:none;color:#ffffff;font:Arial}
 h2,.header,.footer,.nav-item a{text-align:center;}
 p{text-align:left;}
-.nav{list-style-type:none;padding:0em;overflow:hidden;}
+.nav{list-style-type:none;padding:0;overflow:hidden;}
 .nav-item{float:left;}
-.nav-item a{display:block;padding:0.875em 1em;}
+.nav-item a{display:block;padding:14px 16px;}
 .secondary{float:right!important;}
-.nav-background,.nav{background-color:#000000;margin:0em;}
+.nav-background,.nav{background-color:#000000;margin:0px;}
 .header,.footer,.dark{background-color:#191919;}
 .header,.footer,.nav-item a{color:#ffffff;text-decoration:none;font-family:Helvetica;}
-.header,.footer{font-size:4.6875em;margin:none;}
-.header{padding:2.5em;}
-.footer{padding:1.25em;}
-.stripe-pattern{padding:4em;}
+.header,.footer{font-size:75px;margin:none;}
+.header{padding:40px;}
+.footer{padding:20px;}
+.stripe-pattern{padding:64px;}
 .stripe-pattern-row::after{content:"";display:table;clear:both;}
-.stripe-pattern-column-66,.stripe-pattern-column-33{float:left;padding:1.25em;}
+.stripe-pattern-column-66,.stripe-pattern-column-33{float:left;padding:20px;}
 .stripe-pattern-column-33{width:33.33333%;}
 .stripe-pattern-column-66{width:66.66666%;}
-.navhover{position:absolute;top:0;left:0;width:inherit;height:2.6875em;background-color:#fff;-webkit-transform-origin:top center;transform-origin:top center;-webkit-transform:scale3d(1,0,1);transform:scale3d(1,0,1);-webkit-transition:-webkit-transform .6s cubic-bezier(.19,1,.22,1);transition:-webkit-transform .6s cubic-bezier(.19,1,.22,1);transition:transform .6s cubic-bezier(.19,1,.22,1);transition:transform .6s cubic-bezier(.19,1,.22,1),-webkit-transform .6s cubic-bezier(.19,1,.22,1)}
+.navhover{position:absolute;top:0;left:0;width:inherit;height:inherit;background-color:#fff;-webkit-transform-origin:top center;transform-origin:top center;-webkit-transform:scale3d(1,0,1);transform:scale3d(1,0,1);-webkit-transition:-webkit-transform .6s cubic-bezier(.19,1,.22,1);transition:-webkit-transform .6s cubic-bezier(.19,1,.22,1);transition:transform .6s cubic-bezier(.19,1,.22,1);transition:transform .6s cubic-bezier(.19,1,.22,1),-webkit-transform .6s cubic-bezier(.19,1,.22,1)}
 .nav-item a:focus .navhover,.nav-item a:hover .navhover{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1);-webkit-transform-origin:bottom center;transform-origin:bottom center}
