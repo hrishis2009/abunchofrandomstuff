@@ -20,4 +20,5 @@ li.nav-item a{display:block;padding:14px 16px;}
 .stripe-pattern-row::after{content:"";display:table;clear:both;}
 .stripe-pattern-column-66,.stripe-pattern-column-33{float:left;padding:20px;}
 .stripe-pattern-column-33{width:33.33333%;}
+.stripe-pattern-column-66{width:66.66666%;}
 .navhover{background-color:#ffffff;height:0px;width:inherit;}
