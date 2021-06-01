@@ -23,23 +23,16 @@ html {
 
 :root {
   font-size: 16px;
-  --white: #ffffff;
-  --black: #000000;
-  --gray: #333333;
-  --darkgray: #191919;
 }
 
 body {
-  background-color: var(--gray);
+  background-color: #333333;
   margin: 0%;
   height: 100%;
 }
 
-img,
-nav-item a {
-  display: block;
-}
 img {
+  display: block;
   height: auto;
   max-width: 100%;
 }
@@ -47,14 +40,9 @@ img {
 h2,
 p {
   float: center;
-  font: Arial;
-}
-
-h2,
-p,
-.dropdown-content a {
   text-decoration: none;
-  color: var(--white);
+  color: #ffffff;
+  font:Arial;
 }
 
 h2,
@@ -79,6 +67,7 @@ p {
 }
 
 .nav-item a {
+  display: block;
   padding: 14px 16px;
 }
 
@@ -87,42 +76,10 @@ p {
 }
 
 .nav-background,
-.nav,
-.dropbtn,
-.dropdown-content {
-  background-color: var(--black);
+.nav {
+  background-color: #000000;
   margin: 0px;
 }
-
-.nav-item a,
-.dropbtn,
-.dropdown-content a {
-  padding: 14px 16px;
-}
-
-.dropbtn {
-  color: var(--white);
-  cursor: pointer;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  overflow: auto;
-  z-index: 3;
-}
-
-.show,
-.dropdown-content a{
-  display: block;
-}
-
 
 .header,
 .footer,
