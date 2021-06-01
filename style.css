@@ -1,7 +1,8 @@
 @charset"utf-8";
 
 @media screen and (max-width: 500px) {
-  .stripe-pattern-column-66,.stripe-pattern-column-33 {
+  .stripe-pattern-column-66,
+  .stripe-pattern-column-33 {
     width: 100%; 
     text-align: center;
   }
@@ -36,14 +37,18 @@ img {
   max-width: 100%;
 }
 
-h2,p {
+h2,
+p {
   float: center;
   text-decoration: none;
   color: #ffffff;
   font:Arial;
 }
 
-h2,.header,.footer,.nav-item a {
+h2,
+.header,
+.footer,
+.nav-item a {
   text-align: center;
 }
 
@@ -70,22 +75,28 @@ p {
   float: right !important;
 }
 
-.nav-background,.nav {
+.nav-background,
+.nav {
   background-color: #000000;
   margin: 0px;
 }
 
-.header,.footer,.dark {
+.header,
+.footer,
+.dark {
   background-color: #191919;
 }
 
-.header,.footer,.nav-item a {
+.header,
+.footer,
+.nav-item a {
   color: #ffffff;
   text-decoration: none;
   font-family: Helvetica;
 }
 
-.header,.footer {
+.header,
+.footer {
   font-size: 50px;
   margin: none;
 }
@@ -108,7 +119,8 @@ p {
   clear: both;
 }
 
-.stripe-pattern-column-66,.stripe-pattern-column-33 {
+.stripe-pattern-column-66,
+.stripe-pattern-column-33 {
   float: left;
   padding: 20px;
 }
