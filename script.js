@@ -31,12 +31,12 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
 
 function dropdown() {
-  document.getElementById("myDropdown").classList.toggle("show");
+  document.getElementById("dropdown").classList.toggle("show");
 }
 
 window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
+  var myDropdown = document.getElementById("dropdown");
     if (myDropdown.classList.contains('show')) {
       myDropdown.classList.remove('show');
     }
