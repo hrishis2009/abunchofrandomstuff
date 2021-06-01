@@ -59,16 +59,54 @@ p {
 .nav {
   list-style-type: none;
   padding: 0;
+}
+
+.nav,
+.dropdown{
   overflow: hidden;
 }
 
-.nav-item {
+.nav-item,
+.dropdown {
   float: left;
 }
 
 .nav-item a {
   display: block;
   padding: 14px 16px;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: var(--white);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--black);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: var(--white);
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.show {
+  display: block;
 }
 
 .secondary {
