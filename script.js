@@ -23,7 +23,7 @@ function navleave(x) {
 }
 
 function myMap() {
-var mapProp= {
+var mapProp = {
   center:new google.maps.LatLng(lat,lng),
   zoom:5,
 };
