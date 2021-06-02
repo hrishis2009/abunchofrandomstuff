@@ -6,7 +6,6 @@
     width: 100%; 
     text-align: center;
   }
-  
   img {
     margin:auto;
   }
@@ -23,7 +22,7 @@ html {
 
 :root {
   font-size: 16px;
-  --black:  #000000;
+  --black: #000000;
   --white: #ffffff;
   --grey: #333333;
   --darkgrey: #191919;
@@ -45,14 +44,22 @@ h2,
 p {
   float: center;
   text-decoration: none;
-  color: var(--white);
   font: Arial;
 }
 
 h2,
+p,
 .header,
 .footer,
-.nav-item a {
+.nav-item a,
+.subnav .subnavbtn,
+.subnav-content a {
+  color: var(--white);
+}
+h2,
+.header,
+.footer,
+.nav-item a{
   text-align: center;
 }
 
@@ -61,15 +68,12 @@ p {
 }
 
 .nav {
+  overflow: hidden;
   list-style-type: none;
   padding: 0;
 }
 
-.nav{
-  overflow: hidden;
-}
-
-.nav-item a {
+.nav-item a{
   display: block;
   padding: 14px 16px;
 }
@@ -88,6 +92,38 @@ p {
   margin: 0px;
 }
 
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: var(--black);
+  margin: 0;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: var(--black);
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content li {
+  float: left;
+  text-decoration: none;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
 .header,
 .footer,
 .dark {
@@ -97,7 +133,6 @@ p {
 .header,
 .footer,
 .nav-item a {
-  color: var(--white);
   text-decoration: none;
   font-family: Helvetica;
 }
