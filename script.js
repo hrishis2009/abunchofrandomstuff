@@ -25,6 +25,7 @@ function getLocation() {
     navigator.geolocation.getCurrentPosition(showPosition);
   } else {
     document.getElementById("userLocMapErr").innerHTML = "Geolocation is not supported by this browser.";
+    document.getElementById("userLocMapErr").style.color = "#ff0000";
   }
 }
 
