@@ -106,7 +106,6 @@ p {
 .subnav-content {
   display: none;
   position: absolute;
-  left: 0;
   background-color: var(--black);
   width: 100%;
   z-index: 1;
