@@ -19,7 +19,3 @@ function navLeave(x) {
   x.style.animation = "mouseleave 0.45s 1";
   x.style.animationFillMode = "forwards";
 }
-
-function openSubNav() {
-  document.getElementByClassName("subnav-content").style.display = "block";
-}
