@@ -33,8 +33,15 @@ h2,
 p {
   float: center;
   text-decoration: none;
+}
+
+
+h2,
+p,
+.subnav subnavbtn {
   font: Arial;
 }
+
 
 h2,
 p,
@@ -42,7 +49,8 @@ p,
 .footer,
 .nav-item a,
 .subnav .subnavbtn,
-.subnav-content a {
+.subnav-content a,
+.nav-item {
   color: var(--white);
 }
 h2,
@@ -63,11 +71,10 @@ p {
   width:100%;
 }
 
-.nav-item{
+.nav-item {
   display: block;
   padding: 14px 16px;
   text-decoration: none;
-  color: var(--white);
 }
 
 .left {
@@ -79,10 +86,12 @@ p {
 }
 
 .nav-background,
-.nav {
+.nav,
+.subnav .subnavbtn {
   background-color: var(--black);
   margin: 0px;
 }
+
 
 .subnav {
   float: left;
@@ -90,10 +99,7 @@ p {
 }
 
 .subnav .subnavbtn {
-  font-size: 16px;  
-  background-color: var(--black);
-  margin: 0px;
-  font: Arial;
+  font-size: 16px;
 }
 
 .subnav-content {
@@ -138,10 +144,6 @@ p {
   padding: 40px;
 }
 
-.footer {
-  padding: 20px;
-}
-
 .stripe-pattern {
   padding: 64px;
 }
@@ -152,16 +154,21 @@ p {
   clear: both;
 }
 
-.stripe-pattern-column-66,
-.stripe-pattern-column-33 {
+.column-66,
+.column-33 {
   float: left;
+}
+
+.column-66,
+.column-33,
+.footer {
   padding: 20px;
 }
 
-.stripe-pattern-column-33 {
+.column-33 {
   width: 33.33333%;
 }
 
-.stripe-pattern-column-66 {
+.column-66 {
   width: 66.66666%;
 }
