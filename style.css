@@ -114,17 +114,13 @@ p {
   position: absolute;
   background-color: var(--black);
   width: 100%;
+  top: 350px;
+  left: 0px;
   z-index: 1;
 }
 
 .subnav-content a {
   text-decoration: none;
-}
-
-.subnav:hover .subnav-content {
-  display: block;
-  top: 350px;
-  left: 0px;
 }
 
 .header,
