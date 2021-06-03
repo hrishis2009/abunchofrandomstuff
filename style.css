@@ -5,16 +5,19 @@
 }
 
 html {
-  font-size: 16px;
   line-height: 1.5;
 }
 
 :root {
-  font-size: 16px;
   --black: #000000;
   --white: #ffffff;
   --grey: #333333;
   --darkgrey: #191919;
+}
+
+html,
+:root {
+  font-size: 16px;
 }
 
 body {
@@ -174,9 +177,4 @@ p {
 
 .column-66 {
   width: 66.66666%;
-}
-
-.btn {
-  width: inherit;
-  height: 15px;
 }
