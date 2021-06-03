@@ -19,24 +19,3 @@ function navleave(x) {
   x.style.animation = "mouseleave 0.45s 1";
   x.style.animationFillMode = "forwards";
 }
-
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(myMap);
-  } else {
-    document.getElementById("userLocMapErr").innerHTML = "Geolocation is not supported by this browser.";
-    document.getElementById("userLocMapErr").style.color = "#ff0000";
-  }
-}
-
-function myMap() {
-var mapProp= {
-  center:new google.maps.LatLng(position.coords.latitude,position.coords.longitude),
-  zoom:5,
-};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-
-var marker = new google.maps.Marker({position: {lat: position.coords.latitude , lng: position.coords.longitude}});
-
-marker.setMap(map);
