@@ -10,20 +10,16 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 
-function naventer(x) {
+function navEnter(x) {
   x.style.animation = "mouseenter 0.75s 1";
   x.style.animationFillMode = "forwards";
 }
 
-function navleave(x) {
+function navLeave(x) {
   x.style.animation = "mouseleave 0.45s 1";
   x.style.animationFillMode = "forwards";
 }
 
-function myMap() {
-var mapProp = {
-  center: new google.maps.LatLng(51.508742,-0.120850),
-  zoom: 5,
-};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+function openSubNav() {
+  document.getElementByClassName("subnav-content").style.display = "block";
 }
