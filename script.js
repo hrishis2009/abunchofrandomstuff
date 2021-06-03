@@ -22,13 +22,21 @@ function navleave(x) {
 
 function getLocation() {
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
+    navigator.geolocation.getCurrentPosition(myMap);
   } else {
     document.getElementById("userLocMapErr").innerHTML = "Geolocation is not supported by this browser.";
     document.getElementById("userLocMapErr").style.color = "#ff0000";
   }
 }
 
-function showPosition(position) {
-  document.getElementById("userLocMap").src = "https://www.google.com/maps/@" + position.coords.latitude + "," +  position.coords.longitude + ",78m/data=!3m1!1e3";
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(position.coords.latitude,position.coords.longitude),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
+
+var marker = new google.maps.Marker({position: {lat: position.coords.latitude , lng: position.coords.longitude}});
+
+marker.setMap(map);
