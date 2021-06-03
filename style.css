@@ -172,3 +172,9 @@ p {
 .column-66 {
   width: 66.66666%;
 }
+
+.btn {
+  width: 375px;
+  margin: 10px;
+  height:  265px;
+}
