@@ -52,8 +52,9 @@
         <div class="stripe-pattern dark">
             <div class="stripe-pattern-row">
                 <div class="stripe-pattern-column-33">
-                    <div id="googleMap"></div>
-                    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
+                    <button onclick="getLocation()">Get Location</button>
+                    <iframe id="userLocMap" src=""></iframe>
+                    <p id="userLocMapErr"></p>
                 </div>
                 <div class="stripe-pattern-column-66">
                     <h2>A Breif Preview</h2>
