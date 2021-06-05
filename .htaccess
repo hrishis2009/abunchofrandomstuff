@@ -2,4 +2,6 @@
       DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
 </IfModule>
 ErrorDocument 404 https://shanmuga1980.github.io/abunchofrandomstuff/404.html
-AddType application/x-httpd-php .htm .html
+<Files index.html>
+      AddType application/x-httpd-phph .html 
+</Files>
