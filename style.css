@@ -198,8 +198,8 @@ input[type=text],
 input[type=password],
 .submitbtn {
   width: 100%;
+  background-color: var(--grey);
 }
-
 
 .submitbtn {
   background-color: var(--black);
