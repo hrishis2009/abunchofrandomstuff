@@ -199,6 +199,21 @@ input[type=password],
 .submitbtn {
   width: 100%;
   background-color: var(--grey);
+  color: var(--white);
+}
+
+button[type=submitbtn],
+button[type=signupbtn] {
+  width: 42.5%;
+  margin: 3.33333%;
+}
+
+button[type=submitbtn] {
+  float: right;
+}
+
+button[type=signupbtn] {
+  float: left;
 }
 
 .container {
