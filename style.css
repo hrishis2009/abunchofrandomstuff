@@ -202,17 +202,17 @@ input[type=password],
   color: var(--white);
 }
 
-button[type=submitbtn],
-button[type=signupbtn] {
+.submitbtn,
+.signupbtn {
   width: 42.5%;
   margin: 3.33333%;
 }
 
-button[type=submitbtn] {
+.submitbtn {
   float: right;
 }
 
-button[type=signupbtn] {
+.signupbtn {
   float: left;
 }
 
