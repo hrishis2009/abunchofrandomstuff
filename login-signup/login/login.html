@@ -14,7 +14,6 @@
         <meta name="og:site_name" content="A Bunch of Random Stuff">
         <meta name="og:description" content="Random and interesting articles about various subjects.">
         <meta name="og:country-name" content="USA">
-        <meta name="fb:page_id" content="2">
         <meta name="og:locale" content="en_US">
         <script src="https://shanmuga1980.github.io/abunchofrandomstuff/script.js"></script> 
         <link rel="stylesheet" href="https://shanmuga1980.github.io/abunchofrandomstuff/style.css">
@@ -23,18 +22,25 @@
         <h2>Login Form</h2>
         <form action="https://shanmuga1980.github.io/abunchofrandomstuff/login-signup/login/login-form-action.php" method="post" class="dark">
           <div class="container">
-            <label for="uname"><b>Username</b></label>
+            <p>
+              <label for="uname">
+                  <b>Username</b>
+              </label>
+            </p>
             <input type="text" placeholder="Enter Username" name="uname" required>
-            <label for="psw"><b>Password</b></label>
+            <p>
+              <label for="psw">
+                <b>Password</b>
+              </label>
+            </p>
             <input type="password" placeholder="Enter Password" name="psw" required>
             <button type="submitbtn">Login</button>
             <label>
               <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
           </div>
-          <div class="container" style="background-color:#f1f1f1">
-            <button type="button" class="signupbtn">Sign Up</button>
-          </div>
+          <button type="button" class="loginbtn">Log In</button>
+          <button type="button" class="signupbtn">Sign Up</button>
         </form>
     </body>  
 </html>
