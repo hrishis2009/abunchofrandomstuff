@@ -51,9 +51,9 @@ h2,
 p,
 .header,
 .footer,
-.nav-item a,
+.nav-item,
 .subnav .subnavbtn,
-.subnav-content a,
+.subnav-content,
 .nav-item,
 .submitbtn,
 .signupbtn {
@@ -63,7 +63,7 @@ p,
 h2,
 .header,
 .footer,
-.nav-item a{
+.nav-item{
   text-align: center;
 }
 
@@ -110,7 +110,7 @@ p {
 }
 
 .subnav,
-.subnvbtn a {
+.subnvbtn {
   float: left;
 }
 
@@ -126,7 +126,7 @@ p {
   z-index: 1;
 }
 
-.subnav-content a {
+.subnav-content {
   text-decoration: none;
 }
 
