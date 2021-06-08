@@ -2,7 +2,7 @@
 $uname = $_POST["uname"];
 $name = $_POST["name"];
 $psw = $_POST["psw"];
-$servername = "192.168.1.2";
+$servername = "10.0.75.1";
 $username = "root";
 $password = "";
 $dbname = "apps";
