@@ -5,18 +5,18 @@ $psw = $_POST["psw"];
 $servername = "192.168.1.2";
 $username = "root";
 $password = "";
+$dbname = "apps";
 
-$conn = mysqli_connect($servername, $username, $password);
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "$sql = "create Test (
-firstname VARCHAR(30) NOT NULL,
-lastname VARCHAR(30) NOT NULL,
-email VARCHAR(50),
-reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-)";";
+$sql = "create Test (
+                  firstname varchar(30) not NULL,
+                  lastname varchar(30) not NULL,
+                  email varchar(50) not null,
+                  )";
 
 if ($conn->query($sql) === TRUE) {
   echo "<p>Account successfully created. Thank you.</p>";
