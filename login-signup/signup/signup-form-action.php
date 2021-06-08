@@ -2,9 +2,9 @@
 $uname = $_POST["uname"];
 $name = $_POST["name"];
 $psw = $_POST["psw"];
-$servername = "localhost";
-$username = "username";
-$password = "password";
+$servername = "192.168.1.2";
+$username = "root";
+$password = "";
 
 $conn = mysqli_connect($servername, $username, $password);
 if (!$conn) {
