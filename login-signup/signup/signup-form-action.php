@@ -11,8 +11,12 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "INSERT INTO Users (username, name, password)
-VALUES ($uname, $name, $psw)";
+$sql = "$sql = "create Test (
+firstname VARCHAR(30) NOT NULL,
+lastname VARCHAR(30) NOT NULL,
+email VARCHAR(50),
+reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+)";";
 
 if ($conn->query($sql) === TRUE) {
   echo "<p>Account successfully created. Thank you.</p>";
