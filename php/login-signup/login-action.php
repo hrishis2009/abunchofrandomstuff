@@ -4,7 +4,17 @@ if (isset ($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     header("location: welcome.php");
     exit;
 }
-require_once "config.php";
+define("db_server", "localhost");
+define("db_username", "root");
+define("db_psw", "");
+define("db_name", "Users");
+
+$connection = mysqli_connect(db_server, db_username, db_psw, db_name);
+
+if ($connection === false) {
+  die("Connection failed: " . mysqli_connect_error()) . " . Please try again.";
+}
+
 $username = $password = "";
 $username_err = $password_err = $login_err = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
