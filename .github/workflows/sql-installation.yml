@@ -4,5 +4,5 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: npm install mysql
+      - run: npm install -g execsql
       - run: echo "mySQL installed successfully."
