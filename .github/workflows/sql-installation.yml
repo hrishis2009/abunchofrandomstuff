@@ -1,0 +1,8 @@
+name: install-sql
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm install mysql
+      - run: echo "mySQL installed successfully."
