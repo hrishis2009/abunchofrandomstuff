@@ -30,13 +30,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
       $email = test_input($_POST["email"]);
       if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format";
+          $emailErr = "Invalid email format";
       }
     }
     if (empty (trim($_POST["password"]))) {
         $password_err = "Please enter a password.";     
     } elseif (strlen(trim($_POST["password"])) < 6) {
         $password_err = "Password must have atleast 6 characters.";
+    } elseif (!preg_match("/^[A-Z]+$/", trim($_POST["password"]))) || (!preg match("/^[a-z]+$/", trim($_POST["password"]))) {
+        $password_err = "Password must have a capital and lowercase letter.";
+    } elseif(!preg_match("/^[~`!@#$%^&*()_+-{}|:;<,>.?]+$/", trim($_POST["password"]))) {
+        $password_err = "Password must have a special character. <br>
+        Special characters include ~, `, !, @, #, $, %, ^, &, *, (, ), _, +, -, {, }, |, :, ;, <, ,, >, ., and ?.";
     } else {
         $password = trim($_POST["password"]);
     }
