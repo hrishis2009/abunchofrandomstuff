@@ -4,3 +4,7 @@
 ErrorDocument 404 https://shanmuga1980.github.io/abunchofrandomstuff/errors/404.html
 AddType application/x-httpd-php .html .htm
 AddType application/x-httpd-php5 .html .htm
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
