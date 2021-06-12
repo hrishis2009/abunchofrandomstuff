@@ -1,10 +1,11 @@
 {
     "scripts": {
+        "name" : "php",
+        "description" : "Install php and use with composer",
+        "license" : "MIT",
         "test": [
             "@php php/login-signup/create-db.php",
             "phpunit"
         ]
-        - "name" : "php.yml"
-        - "description" : "Install php and use with composer"
     }
 }
