@@ -1,0 +1,12 @@
+"homepage": "https://shanmuga1980.github.io/abunchofrandomstuff/"
+
+{
+  "license" : "MIT"
+  "url": "https://shanmuga1980.github.io/abunchofrandomstuff/LICENSE.md"
+}
+
+{
+  "bin": {
+    "node.js": ".github/workflows/node.js.yml"
+  }
+}
