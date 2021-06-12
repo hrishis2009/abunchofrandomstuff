@@ -1,1 +1,8 @@
-"test": "vendor/bin/phpunit"
+{
+    "scripts": {
+        "test": [
+            "@composer install",
+            "phpunit"
+        ]
+    }
+}
