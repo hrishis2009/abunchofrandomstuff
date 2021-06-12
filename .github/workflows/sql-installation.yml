@@ -1,8 +1,0 @@
-name: install-sql
-on: [push]
-jobs:
-  Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
-    steps:
-      - run: npm install https://github.com/shanmuga1980/abunchofrandomstuff/blob/d90c0dcc57139aa205d22bf30a4e4f728d115a01/downloads/mysql-for-visualstudio-1.2.9-src.zip
-      - run: echo "mySQL installed successfully."
