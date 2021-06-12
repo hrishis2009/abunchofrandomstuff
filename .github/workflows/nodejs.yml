@@ -1,7 +1,7 @@
-- name: Setup Node.js environment
-  uses: actions/setup-node@v2.1.5
+name: Setup Node.js environment
+  uses:actions/setup-node@v2.1.5
   with:
-    always-auth: false
-    node-version: 10.15.0
-    architecture: x64
-    token: ${{ github.token }}
+  always-auth: false
+  node-version: 10.15.0
+  architecture: x64
+  token: ${{ github.token }}
