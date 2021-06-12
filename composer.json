@@ -4,11 +4,7 @@
             "@php php/login-signup/create-db.php",
             "phpunit"
         ]
-        "name" : [
-            "php.yml"
-        ]
-        "description" : [
-            "Install php and use with composer"
-        ]
+        "name" : "php.yml"
+        "description" : "Install php and use with composer"
     }
 }
