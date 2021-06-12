@@ -2,7 +2,7 @@
 {
     "scripts": {
         "test": [
-            "@php php/login-signup/create-db.php"
+            "@php php/login-signup/create-db.php",
             "phpunit"
         ]
     }
