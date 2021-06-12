@@ -1,5 +1,7 @@
 {
     "scripts": {
-      "test": "vendor/bin/phpunit"
+      "test": "vendor/bin/phpunit",
+       "name" : "name",
+       "description" : "desc"   
     }
 }
