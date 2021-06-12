@@ -3,7 +3,8 @@
     "name": {
       "type": "string", 
       "description": "github/abunchofrandomstuff", 
-      "pattern": "^[a-z0-9]([_.-]?[a-z0-9]+)*/[a-z0-9](([_.]?|-{0,2})[a-z0-9]+)*$"}, 
+      "pattern": "^[a-z0-9]([_.-]?[a-z0-9]+)*/[a-z0-9](([_.]?|-{0,2})[a-z0-9]+)*$"
+    }, 
     "description": {
       "type": "string", 
       "description": "hello world"
@@ -11,10 +12,11 @@
     "license": {
       "type": "string", 
       "description": "MIT"
-    },
-    "scripts": {
-      "test": [
-        "@php php/login-signup/create-db.php", 
-        "phpunit"
-      ]
+    }
+  "scripts": {
+    "test": [
+      "@php php/login-signup/create-db.php", 
+      "phpunit"
+    ]
+}
 
