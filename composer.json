@@ -13,6 +13,7 @@
       "type": "string", 
       "description": "MIT"
     }
+  }
   "scripts": {
     "test": [
       "@php php/login-signup/create-db.php", 
