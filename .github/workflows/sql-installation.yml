@@ -4,5 +4,5 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: npm install git+https://shanmuga1980.github.io/abunchofrandomstuff/downloads/mysql-for-visualstudio-1.2.9-src.zip
+      - run: npm install git+https://shanmuga1980.github.io/abunchofrandomstuff/downloads/mysql-for-visualstudio-1.2.9-src.zip.git
       - run: echo "mySQL installed successfully."
