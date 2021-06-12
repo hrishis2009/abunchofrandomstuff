@@ -1,7 +1,8 @@
+
 {
     "scripts": {
         "test": [
-            "@composer install",
+            "@php script.php",
             "phpunit"
         ]
     }
