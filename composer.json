@@ -5,7 +5,7 @@
             "phpunit"
         ]
     }
-},
+}EOF
 {
     "properties": {
         "name": [
