@@ -9,5 +9,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install Dependecies
-    - uses: php-actions/composer@v6
+      uses: php-actions/composer@v6
+      with:
+        php_version: 8.0
+        php_extensions: mysqli redif exif
+        version: 2
     
