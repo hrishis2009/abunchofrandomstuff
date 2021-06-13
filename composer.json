@@ -5,4 +5,12 @@
             "phpunit"
         ]
     }
+    "properties": {
+        "name": [
+            "test"
+        ]
+        "description": [
+            "helloworld"
+        ]
+    }
 }
