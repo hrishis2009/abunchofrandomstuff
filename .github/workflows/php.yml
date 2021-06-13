@@ -7,11 +7,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Download Composer
-      uses: actions/checkout@v2
-    - name: Install PHP
+    - uses: actions/checkout@v2
+    - name: Install dependencies
       uses: php-actions/composer@v6
       with:
-        php_version: 8.0
-        php_extensions: mysqli redis exif
+        interaction: yes
+        progress: yes
+        php_version: 7.4
+        php_extensions: redis exif mysqli
         version: 2
