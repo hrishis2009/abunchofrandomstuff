@@ -1,0 +1,8 @@
+{
+    "scripts": {
+        "test": [
+            "@php install",
+            "phpunit"
+        ]
+    }
+}
