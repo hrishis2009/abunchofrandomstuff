@@ -1,0 +1,1 @@
+$ docker pull ghcr.io/php-actions/example-composer/php-actions_composer_example-composer:php-latest-build2
