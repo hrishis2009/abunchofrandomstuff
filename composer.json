@@ -1,1 +1,1 @@
-{"scripts": {"test": ["@php install", "phpunit"]}}, {"properties": {"name": ["test"]}, {"description": ["hi"]}}
+{"scripts": {"test": ["@php install", "phpunit"]}}, {"properties": {"name": ["test"], "description": ["hi"]}}
