@@ -16,4 +16,4 @@ jobs:
         php_extensions: mysqli redis exif
         version: 2
     - name: Run Composer
-      uses: php composer.phar
+      uses: php composer.phar@v2
