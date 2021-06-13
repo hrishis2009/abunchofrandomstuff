@@ -7,8 +7,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Install Dependecies
+    - name: Install Composer
+      uses: actions/checkout@v2
+    - name: Install PHP
       uses: php-actions/composer@v6
       with:
         php_version: 8.0
