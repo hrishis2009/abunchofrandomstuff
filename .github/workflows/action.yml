@@ -1,4 +1,4 @@
-name: Setup PHP Action
+name: Setup All Workflows
 
 on: [push]
 
