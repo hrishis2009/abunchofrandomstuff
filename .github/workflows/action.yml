@@ -4,7 +4,17 @@ on: [push]
 
 jobs:
   build:
-    runs-on: ['ubuntu-latest', 'windows-latest', 'macos-latest']
+    runs-on: ${{matrix.os}}
+    
+    strategy:
+      matrix:
+        os: ['ubuntu-latest', 'windows-latest', 'macos-latest']
+        php-v: ['8.1', '8.0', '7.4']
+        phpunit-v: ['latest']
+        include:
+        - operating-system: 'ubuntu-latest'
+          php-versions: '8.1'
+          phpunit-versions: '9.0'
     
     steps:
     - name: Checkout
@@ -13,8 +23,8 @@ jobs:
     - name: Setup PHP
       uses: shanmuga1980/setup-php@v2
       with:
-        php-version: '8.1'
+        php-version: ${{matrix.php-v}}
         extensions: mysqli, json
         ini-values: post_max_size=256M, max_execution_time=180, date.timezone=America/New_York, extension = php_mysqli, zend_extension = php_json
         coverage: xdebug2   
-        tools: composer:v2
+        tools: composer:v2, phpunit:${{matrix.phpunit-v}}
