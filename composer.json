@@ -1,6 +1,13 @@
 {
-    "name" : "github/abunchofrandomstuff",
-    "description" : "composer",
+    "name": {
+        "type": "string",
+        "description": "github/abunchofrandomstuff",
+        "pattern": "^[a-z0-9]([_.-]?[a-z0-9]+)*/[a-z0-9](([_.]?|-{0,2})[a-z0-9]+)*$"
+    },
+    "description" : {
+        "type": "string",
+        "description": "helloworld"
+    },            
     "require": {
         "php" : "8.0.6"
     }
