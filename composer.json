@@ -2,13 +2,12 @@
     "require": {
         "php" : ">=8.0.6",
     }
-}
+},
 {
     "license": "MIT"
-}
+},
 {
     "autoload": {
-        "files": ["https://shanmuga1980.github.io/abunchofrandomstuff/php/login-signup/signup-action.php",
-                  "https://shanmuga1980.github.io/abunchofrandomstuff/php/login-signup/login-action.php" ]
+        "files": ["https://shanmuga1980.github.io/abunchofrandomstuff/php/login-signup/signup-action.php""https://shanmuga1980.github.io/abunchofrandomstuff/php/login-signup/login-action.php" ]
     }
 }
