@@ -1,0 +1,15 @@
+name: Yeet
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install node software
+        uses: actions/setup-node@v1
+        
+      - name: Install PHP action
+        uses: npm install setup-php
+        
+        
