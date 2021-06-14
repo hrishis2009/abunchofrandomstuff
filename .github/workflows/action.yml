@@ -1,28 +1,20 @@
-name: Setup All Workflows
+name: Setup PHP Action
 
 on: [push]
 
 jobs:
-  run:
-    runs-on: ${{matrix.operating-systems}}
-    strategy:
-      matrix:
-        operating-systems: ['ubuntu-latest', 'windows-latest', 'macos-latest']
-        php-versions: ['8.1', '8.0.7', '8.0', '7.4.20', '7.4']
-        phpunit-versions: ['latest']
-        include:
-        - operating-system: 'ubuntu-latest'
-          php-versions: '7.2'
-          phpunit-versions: '8.5.13'    
-        
+  build:
+    runs-on: ['ubuntu-latest', 'windows-latest', 'macos-latest']
+    
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Setup PHP
-        uses: shanmuga1980/setup-php@v2
-        with:
-          php-version: ${{matrix.php-versions}}
-          extensions: mysqli, json
-          ini-values: date.timezone=America/New_York, extension = php_mysqli, zend_extension = php_json
-          coverage: xdebug2
-          tools: composer:v2, phpunit:${{ matrix.phpunit-versions }}
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup PHP
+      uses: shanmuga1980/setup-php@v2
+      with:
+        php-version: '8.1'
+        extensions: mysqli, json
+        ini-values: post_max_size=256M, max_execution_time=180, date.timezone=America/New_York, extension = php_mysqli, zend_extension = php_json
+        coverage: xdebug2   
+        tools: composer:v2
