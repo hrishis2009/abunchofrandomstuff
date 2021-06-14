@@ -9,8 +9,13 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ${{matrix.os}}
 
+    strategy:
+      fail-fast: true
+      matrix:
+        os: ['ubuntu-latest', 'ubuntu-18.04', 'windows-latest', 'windows-2016', 'macos-latest']
+      
     steps:
     - uses: actions/checkout@v2
 
