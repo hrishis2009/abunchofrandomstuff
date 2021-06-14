@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "test": "github/abunchofrandomstuff/phpunit"
+    }
+}
