@@ -1,4 +1,6 @@
 {
+    "name" : "php with composer"
+    "description" : "composer"
     "require": {
         "php" : "8.0.6"
     }
