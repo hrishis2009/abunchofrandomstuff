@@ -16,4 +16,3 @@ jobs:
         php_version: 8.0.6
         php_extensions: redis exif mysqli
         version: 2
-    - uses: php "composer.phar update"@8.0.6
