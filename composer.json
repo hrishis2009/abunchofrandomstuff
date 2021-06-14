@@ -1,5 +1,7 @@
 {
-    "name" : "or",
+    "name" : {
+        "description" : "or"
+        "pattern" : "^[a-z0-9]([_.-]?[a-z0-9]+)*/[a-z0-9](([_.]?|-{0,2})[a-z0-9]+)*$"
     "description" : "composer",
     "require": {
         "php" : "8.0.6"
