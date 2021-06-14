@@ -3,17 +3,26 @@ name: Setup PHP Action
 on: [push]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  run:
+    runs-on: ${{matrix.operating-systems}}
+    strategy:
+      matrix:
+        operating-systems: ['ubuntu-latest', 'windows-latest', 'macos-latest']
+        php-versions: ['8.1', '8.0.7', '8.0', '7.4.20', '7.4']
+        phpunit-versions: ['latest']
+        include:
+        - operating-system: 'ubuntu-latest'
+          php-versions: '7.2'
+          phpunit-versions: '8.5.13'    
+        
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
       - name: Setup PHP
         uses: shanmuga1980/setup-php@v2
         with:
-          php-version: '8.0.7'
-          extensions: mysqli, exif, Xdebug
-          ini-values: opcache.enable_cli=1, opcache.jit=tracing, opcache.jit_buffer_size=64M, date.timezone=America/New_York
+          php-version: ${{matrix.php-versions}}
+          extensions: mysqli, json
+          ini-values: date.timezone=America/New_York, extension = php_mysqli, zend_extension = php_json
           coverage: xdebug2
-          tools: composer:v2
+          tools: composer:v2, phpunit:${{ matrix.phpunit-versions }}
