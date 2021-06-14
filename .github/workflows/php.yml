@@ -9,12 +9,7 @@ jobs:
     steps:
     - name: Setup PHP Action
       uses: shivammathur/setup-php@2.11.0
-    - uses: actions/checkout@v2
-    - name: Install dependencies
-      uses: php-actions/composer@v6
       with:
-        interaction: yes
-        progress: yes
-        php_version: 8.0.6
-        php_extensions: redis exif mysqli
-        version: 2
+        php-version: '8.0'
+      env:
+        fail-fast: true
