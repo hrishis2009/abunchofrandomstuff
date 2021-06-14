@@ -1,5 +1,5 @@
 {
-    "name" : "phpwithcomposer",
+    "name" : "or",
     "description" : "composer",
     "require": {
         "php" : "8.0.6"
