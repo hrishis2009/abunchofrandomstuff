@@ -10,6 +10,6 @@ jobs:
         uses: actions/setup-node@v1
         
       - name: Install PHP action
-        uses: npm install setup-php
+        run: npm install setup-php
         
         
