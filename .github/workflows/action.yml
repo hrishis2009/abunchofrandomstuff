@@ -1,4 +1,4 @@
-name: Setup PHP Action
+name: Setup All Workflows
 
 on: [push]
 
@@ -7,10 +7,12 @@ jobs:
     runs-on: ${{matrix.os}}
     
     strategy:
+      fail-fast: false
       matrix:
         os: ['ubuntu-latest', 'ubuntu-18.04', 'windows-latest', 'windows-2016', 'macos-latest', 'macos-11']
         php-v: ['8.1', '8.0.7', '8.0', '7.4.20', '7.4',]
         phpunit-v: ['latest']
+        language: ['javascript']
         include:
         - operating-system: 'ubuntu-latest'
           php-versions: ${{matrix.php-v}}
@@ -20,7 +22,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Setup PHP
+    - name: setup php FOR php action
       uses: shanmuga1980/setup-php@v2
       with:
         php-version: ${{matrix.php-v}}
@@ -28,3 +30,15 @@ jobs:
         ini-values: post_max_size=256M, max_execution_time=180, date.timezone=America/New_York, extension = php_mysqli, zend_extension = php_json
         coverage: xdebug2   
         tools: composer:v2, phpunit:${{matrix.phpunit-v}}
+        
+    - name: initialize codeql FOR codeql
+      uses: github/codeql-action/init@v1
+      with:
+        languages: ${{ matrix.language }}
+        
+    - name: autobuild FOR codeql
+      uses: github/codeql-action/autobuild@v1
+      
+    - name: perform codeql analysis FOR codeql
+      uses: github/codeql-action/analyze@v1
+
