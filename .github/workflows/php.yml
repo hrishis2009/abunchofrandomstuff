@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: [ubuntu-latest, windows-latest, macos-latest]
 
     steps:
       - name: Checkout
@@ -14,7 +14,21 @@ jobs:
         uses: shanmuga1980/setup-php@v2
         with:
           php-version: '8.0.7'
-          extensions: mysqli, exif
-          ini-values: opcache.enable_cli=1, opcache.jit=tracing, opcache.jit_buffer_size=64M
+          extensions: mysqli, exif, Xdebug
+          ini-values: opcache.enable_cli=1, opcache.jit=tracing, opcache.jit_buffer_size=64M, date.timezone=America/New_York
           coverage: xdebug2
           tools: composer:v2
+      - name: Check PHP Version
+        run: |
+          php -v
+          php -r "if(strpos(phpversion(),'php-version') === true){throw new Exception('PHP version correct');}else{throw new Exception('Wrong PHP version Installed');}
+      - name: Check Composer Version
+        run: |
+          composer -V
+          php -r "if(strpos(@exec('composer -V'),'Composer version') === true){throw new Exception('Composer version correct');}else{throw new Exception('Wrong Composer version Installed');}
+      - name: Check Extensions
+        run: |
+          php -m
+          php -r "if(extension_loaded('mysqli') === true) {throw new Exception('mysqli installed');}else{throw new Exception('mysqli not installed');}"
+          php -r "if(extension_loaded('exif') === true) {throw new Exception('exif installed');}else{throw new Exception('exif not installed');}"
+          php -r "if(extension_loaded('Xdebug') === true) {throw new Exception('Xdebug installed');}else{throw new Exception('Xdebug not installed');}"
