@@ -8,12 +8,12 @@ jobs:
     
     strategy:
       matrix:
-        os: ['ubuntu-latest', 'windows-latest', 'macos-latest']
-        php-v: ['8.1', '8.0', '7.4']
+        os: ['ubuntu-latest', 'ubuntu-18.04', 'windows-latest', 'windows-2016', 'macos-latest', 'macos-11']
+        php-v: ['8.1', '8.0.7', '8.0', '7.4.20', '7.4',]
         phpunit-v: ['latest']
         include:
         - operating-system: 'ubuntu-latest'
-          php-versions: '8.1'
+          php-versions: ${{matrix.php-v}}
           phpunit-versions: '9.0'
     
     steps:
