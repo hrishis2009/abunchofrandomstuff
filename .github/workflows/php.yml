@@ -1,0 +1,7 @@
+jobs:
+  build:
+    docker:
+      - image: cimg/php:8.0.7
+    steps:
+      - checkout
+      - run: php --8.0.7
