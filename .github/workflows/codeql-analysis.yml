@@ -28,9 +28,11 @@ jobs:
       fail-fast: false
       matrix:
         os: ['ubuntu-latest', 'ubuntu-18.04', 'windows-latest', 'windows-2016', 'macos-latest']
-        language: [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python' ]
+        language: [ 'javascript', 'python' ]
         
     steps: 
+    - name: Checkout
+      uses: actions/checkout@v2
     
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v1
