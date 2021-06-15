@@ -19,33 +19,13 @@ on:
 
 jobs:
   build:
-    runs-on: ${{matrix.os}}
+    runs-on: ubuntu-latest
     
     strategy:
-      fail-fast: true
+      fail-fast: false
       matrix:
-        os: ['ubuntu-latest', 'ubuntu-18.04', 'windows-latest', 'windows-2016', 'macos-latest']
-        php-v: ['8.1', '8.0.7', '8.0', '7.4.20', '7.4',]
         language: ['javascript']
-        phpunit-v: ['latest']
-        include:
-        - operating-system: 'ubuntu-latest'
-          php-versions: '8.0.7'
-          phpunit-versions: '9.0'
-    
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-
-    - name: Setup PHP
-      uses: shanmuga1980/setup-php@v2
-      with:
-        php-version: ${{matrix.php-v}}
-        extensions: mysqli, json
-        ini-values: post_max_size=256M, max_execution_time=180, date.timezone=America/New_York, extension = php_mysqli, zend_extension = php_json
-        coverage: xdebug2   
-        tools: composer:v2, phpunit:${{matrix.phpunit-v}}
-              
+    steps:            
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v1
       with:
