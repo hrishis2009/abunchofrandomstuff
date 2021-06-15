@@ -1,5 +1,8 @@
 {
-    "scripts": {
-        "test": "github/abunchofrandomstuff/phpunit"
+    "name": "github/abunchofrandomstuff",
+    "description": "test",
+    "require": {
+        "php": ">=8.0.7",
+        "composer/composer": "2"
     }
 }
