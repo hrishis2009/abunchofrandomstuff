@@ -1,19 +1,23 @@
 name: Setup PHP Action
 
 on: 
+
   push:
     branches:
       - main
       - node.js
+      
   pull_request:
     branches:
       - main
       - node.js
+      
   page_build:
   release:
     types:
       - created
       - deleted
+      
   schedule:
     - cron:  '30 5,17 * * *'
 jobs:
