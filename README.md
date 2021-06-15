@@ -1,2 +1,1 @@
-# A Bunch of Random Stuff
-[A Bunch of Random Stuff](https://shanmuga1980.github.io/abunchofrandomstuff/) is a website that has a bunch of random stuff. It mainly consists of informational articles, but also contains other luxuries like games coded by the creator, and a login system to help you remember what you were looking at the other day, and some other items of your interest. ***TO BE CONTINUED BY THE OWNER***
+# [***A Bunch of Random Stuff***](https://shanmuga1980.github.io/abunchofrandomstuff/) 
