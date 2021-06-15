@@ -8,5 +8,4 @@ jobs:
     docker:
       - image: cimg/php:8.0.7
     steps:
-      - checkout
-      - run: php --version
+      - run: php --8.0.7
