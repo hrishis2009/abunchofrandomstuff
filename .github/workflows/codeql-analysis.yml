@@ -28,7 +28,7 @@ jobs:
       fail-fast: false
       matrix:
         os: ['ubuntu-latest', 'ubuntu-18.04', 'windows-latest', 'windows-2016', 'macos-latest']
-        language: [ 'javascript', 'python' ]
+        language: [ 'javascript', ]
         
     steps: 
     - name: Checkout
