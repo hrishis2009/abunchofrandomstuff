@@ -4,6 +4,6 @@
     "description": "test",
     "require": {
         "php": ">=8.0.7",
-        "composer/composer": "*"
+        "composer/composer": ""
     }
 }
