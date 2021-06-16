@@ -3,7 +3,7 @@
     "license": "MIT",
     "description": "test",
     "require": {
-        "php": ">=8.0.7",
+        "php": ">=1.0",
         "composer/composer": "2.*"
     }
 }
