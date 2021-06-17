@@ -1,0 +1,9 @@
+{
+    "name": "PHP",
+    "description": "Build and test a PHP application using Composer",
+    "iconName": "php",
+    "categories": ["PHP", "Composer"]
+    "require": {
+        "php": ">=1.0",
+        "composer/composer": "2.*"
+}
