@@ -80,4 +80,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }   
   $connectiom->close();
 }
+
+echo "Hello World";
 ?>
