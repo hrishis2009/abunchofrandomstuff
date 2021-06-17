@@ -1,9 +1,0 @@
-{
-    "name": "github/abunchofrandomstuff",
-    "license": "MIT",
-    "description": "test",
-    "require": {
-        "php": ">=1.0",
-        "composer/composer": "2.*"
-    }
-}
