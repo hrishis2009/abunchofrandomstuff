@@ -6,12 +6,12 @@ on:
     branches: [ main ]
 jobs:
   build:
-    env:
-      interactive_mode: on
     strategy:
       matrix: 
         os: ['ubuntu-latest', 'windows-latest', 'macos-latest']
     runs-on: ${{matrix.os}}
+    env:
+      interactive_mode: on
     steps:
       - uses: actions/checkout@v2
       - name: Create composer.json
