@@ -6,6 +6,6 @@
 *.htaccess
 *.yml
 **/workflows
-**/ISSUE_TEMPLATES
+**/ISSUE_TEMPLATE
 *.md
 
