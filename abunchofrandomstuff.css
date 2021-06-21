@@ -9,10 +9,10 @@ html {
 }
 
 :root {
-  --black: #000000;
+  --black: #2c3531;
   --white: #ffffff;
-  --grey: #333333;
-  --darkgrey: #191919;
+  --blue: #116466;
+  --lightblue: #d1e8e2;
 }
 
 html,
