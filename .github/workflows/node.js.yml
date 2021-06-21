@@ -27,7 +27,4 @@ jobs:
     - name: Install dependencies
       run: |
         npm install
-        git config --global user.name "shanmuga1980"
-        git add -A 
-        git commit -m "Add package-lock.json file."
-        git push -u origin main
+        npm install mysql
