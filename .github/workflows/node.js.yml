@@ -25,4 +25,8 @@ jobs:
       with:
         node-version: '14.x'
     - name: Install dependencies
-      run: npm install
+      run: |
+        npm install
+        git add -A 
+        git commit -m "Add package-lock.json file."
+        git push -u origin main
