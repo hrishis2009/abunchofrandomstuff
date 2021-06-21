@@ -1,3 +1,17 @@
+var prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
+
 /*Start Angular*/
 /*
  AngularJS v1.8.2
@@ -352,25 +366,3 @@ WEEKENDRANGE:[5,6],fullDate:"EEEE, MMMM d, y",longDate:"MMMM d, y",medium:"MMM d
 c){var e=a|0,f=c;void 0===f&&(f=Math.min(b(a),3));Math.pow(10,f);return 1==e&&0==f?"one":"other"}})}]),x(function(){Ee(z.document,Wc)}))})(window);!window.angular.$$csp().noInlineStyle&&window.angular.element(document.head).prepend(window.angular.element("<style>").text('@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}'));
 //# sourceMappingURL=angular.min.js.map
 /*End Angular*/
-
-var prevScrollpos = window.pageYOffset;
-
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-
-function navEnter(x) {
-  x.style.animation = "mouseenter 0.75s 1";
-  x.style.animationFillMode = "forwards";
-}
-
-function navLeave(x) {
-  x.style.animation = "mouseleave 0.45s 1";
-  x.style.animationFillMode = "forwards";
-}
