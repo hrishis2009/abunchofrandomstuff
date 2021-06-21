@@ -52,8 +52,8 @@ p,
 .header,
 .footer,
 .nav-item,
-.subnav .subnavbtn,
-.subnav-content,
+.dropdown .dropbtn,
+.dropdown-content,
 .nav-item,
 .submitbtn,
 .signupbtn {
@@ -93,38 +93,35 @@ p {
 
 .nav-background,
 .nav,
-.subnav .subnavbtn {
+.dropdown .dropdownbtn {
   background-color: var(--blue);
   margin: 0px;
 }
 
-.subnav:hover .subnav-content {
+.dropdown:hover .dropdown-content {
   left: 0px;
   display: block;
 }
 
 .nav,
-.subnav {
+.dropdown {
   overflow: hidden;
 }
 
-.subnav,
-.subnvbtn {
+.dropdown,
+.dropdownbtn {
   float: left;
 }
 
-.subnav .subnavbtn {
+.dropdown .dropdownbtn {
   font-size: 16px;
 }
 
-.subnav-content {
+.dropdown-content {
   display: none;
   position: absolute;
-  width: 100%;
+  width: 87px;
   z-index: 1;
-}
-
-.subnav-content {
   text-decoration: none;
 }
 
