@@ -12,7 +12,7 @@ html {
   --black: #2c3531;
   --white: #ffffff;
   --blue: #116466;
-  --lightblue: #d1e8e2;
+  --grey: #d1e8e2;
 }
 
 html,
@@ -21,7 +21,7 @@ html,
 }
 
 body {
-  background-color: var(--grey);
+  background-color: var(--black);
   margin: 0%;
   height: 100%;
 }
@@ -94,7 +94,7 @@ p {
 .nav-background,
 .nav,
 .subnav .subnavbtn {
-  background-color: var(--black);
+  background-color: var(--blue);
   margin: 0px;
 }
 
@@ -133,7 +133,7 @@ p {
 .header,
 .footer,
 .dark {
-  background-color: var(--darkgrey);
+  background-color: var(--grey);
 }
 
 .header,
@@ -199,7 +199,7 @@ input[type=password],
 .submitbtn {
   width: 100%;
   background-color: var(--grey);
-  color: var(--white);
+  color: var(--blue);
 }
 
 .submitbtn,
