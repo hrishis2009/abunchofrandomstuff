@@ -39,11 +39,11 @@ p {
 
 h2,
 p,
-.dropdown-content,
 .nav-item,
 .header,
 .footer,
-.nav a {
+.nav a,
+.dropdown-content a{
   text-decoration: none;
 }
 
@@ -62,11 +62,11 @@ p,
 .header,
 .footer,
 .nav-item,
-.dropdown .dropbtn,
-.dropdown-content,
 .nav-item,
 .submitbtn,
-.signupbtn {
+.signupbtn,
+.dropdown .dropbtn,
+.dropdown-content a {
   color: var(--white);
 }
 
@@ -87,16 +87,17 @@ p {
   width: 100%;
 }
 
-.nav-item {
+.nav-item,
+dropdown-content a {
   padding: 14px 16px;
 }
 
-nav-item,
-.dropdown:hover .dropdown-content {
+nav-item {
   display: block;
 }
 
-.left {
+.left,
+.dropdown {
   float: left;
 }
 
@@ -106,34 +107,20 @@ nav-item,
 
 .nav-background,
 .nav,
-.dropdown .dropdownbtn {
-  background-color: var(--blue);
+.dropdown .dropbtn {
   margin: 0px;
 }
 
-.dropdown:hover .dropdown-content {
-  left: 0px;
+.nav-background,
+.nav,
+.dropdown .dropbtn,
+.dropdown-content {
+  background-color: var(--blue);
 }
 
 .nav,
 .dropdown {
   overflow: hidden;
-}
-
-.dropdown,
-.dropdownbtn {
-  float: left;
-}
-
-.dropdown .dropdownbtn {
-  font-size: 16px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  width: 87px;
-  z-index: 1;
 }
 
 .header,
@@ -152,6 +139,29 @@ nav-item,
 .footer {
   font-size: 50px;
   margin: none;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown-content a {
+  display: block;
 }
 
 .header {
