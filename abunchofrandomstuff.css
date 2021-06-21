@@ -12,7 +12,7 @@ html {
   --black: #2c3531;
   --white: #ffffff;
   --blue: #116466;
-  --grey: #d1e8e2;
+  --grey: #444444;
 }
 
 html,
@@ -99,7 +99,6 @@ p {
 }
 
 .subnav:hover .subnav-content {
-  top: 350px;
   left: 0px;
   display: block;
 }
@@ -121,7 +120,6 @@ p {
 .subnav-content {
   display: none;
   position: absolute;
-  background-color: var(--black);
   width: 100%;
   z-index: 1;
 }
