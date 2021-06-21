@@ -11,7 +11,7 @@ html {
 :root {
   --black: #1e2024;
   --white: #ffffff;
-  --blue: #116466;
+  --blue: #081f36;
   --grey: #444444;
 }
 
@@ -35,8 +35,18 @@ img {
 h2,
 p {
   float: center;
+}
+
+h2,
+p,
+.dropdown-content,
+.nav-item,
+.header,
+.footer,
+.nav a {
   text-decoration: none;
 }
+
 
 h2,
 p,
@@ -78,9 +88,12 @@ p {
 }
 
 .nav-item {
-  display: block;
   padding: 14px 16px;
-  text-decoration: none;
+}
+
+nav-item,
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .left {
@@ -100,7 +113,6 @@ p {
 
 .dropdown:hover .dropdown-content {
   left: 0px;
-  display: block;
 }
 
 .nav,
@@ -122,7 +134,6 @@ p {
   position: absolute;
   width: 87px;
   z-index: 1;
-  text-decoration: none;
 }
 
 .header,
@@ -134,7 +145,6 @@ p {
 .header,
 .footer,
 .nav a {
-  text-decoration: none;
   font-family: Helvetica;
 }
 
