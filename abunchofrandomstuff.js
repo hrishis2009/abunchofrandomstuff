@@ -41,5 +41,5 @@ function getDateTime() {
   var year = d.getFullYear();
   var day = weekdays[d.getDay();]
   var clockTime = d.toLocaleTimeString();
-  dateTime = day + ", " + month + " " + dayOfMonth + "," + year + ", " + clockTime;
+  dateTime = "Check if this is the current date and time in your timezone. It might be off by 1-10 minutes, but make sure it is not off very much.<br>" + day + ", " + month + " " + dayOfMonth + "," + year + ", " + clockTime;
 };
