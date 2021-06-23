@@ -1,4 +1,4 @@
 {
-  "name" : "abunchofrandomstuff"
+  "name" : "abunchofrandomstuff",
   "test" : "@php /php/login-signup/create-db.php"
 }
