@@ -42,9 +42,10 @@
                 </div>
                 <div class="err">
                     <span class="err" 
-                          ng-show="register.username.$dirty && register.name.$dirty && 
-                                   register.email.$dirty && register.email.$invalid && 
-                                   register.password.$dirty && register.password.$invalid">
+                          ng-show="register.username.$touched && register.username.$invalid || 
+                                   register.name.$touched && regsiter.name.$invalid ||
+                                   register.email.$touched && register.email.$invalid || 
+                                   register.password.$touched && register.password.$invalid">
                         <span ng-show="register.username.$error.required">Username is required.<br></span>
                         <span ng-show="register.name.$error.required">Name is required.<br></span>
                         <span ng-show="register.email.$error.required">Email is required.<br></span>
@@ -61,7 +62,7 @@
                     <input type="reset" class="btn btn-secondary ml-2" value="Reset">
                 </div>
                 <p>Already have an account?
-                    <a href="https://shanmuga1980.github.io/abunchofrandomstuff/login">Login here</a>.
+                    <a href="/login-signup/login">Login here</a>.
                 </p>
             </form>
         </div>    
