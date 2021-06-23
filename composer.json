@@ -5,5 +5,11 @@
     "require": {
         "php": ">=1.0",
         "composer/composer": "2.*"
+    },
+    "scripts": {
+        "test" : [
+            "@php install",
+            "@php /php/login-signup/create-db.php"
+        ]
     }
 }
