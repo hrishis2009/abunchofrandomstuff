@@ -19,40 +19,67 @@
         <script src="/abunchofrandomstuff/angular.js"></script> 
         <link rel="stylesheet" href="/abunchofrandomstuff/abunchofrandomstuff.css">
     </head>
-    <body onload="getDateTime()">
+    <body onload="getDateTime()" ng-app="register">
         <div class="wrapper">
             <h2>Sign Up</h2>
             <p>Please fill this form to create an account.</p>
-            <form name="register" action="https://shanmuga1980.github.io/abunchofrandomstuff/php/login-signup/signup-action.php" method="post" ng-app="">
+            <form name="register" action="https://shanmuga1980.github.io/abunchofrandomstuff/php/login-signup/signup-action.php" method="post">
                 <div class="input">
                     <label>Username</label>
-                    <input type="text" name="username" class="form-control" value="Your Username." ng-model="username" required>
+                    <input type="text" name="username" class="form-control" ng-model="username" ng-blur="validateUsername()" id="username" required>
                 </div>   
                 <div class="form-group">
                     <label>Name</label>
-                    <input type="text" name="name" class="form-control" value="" ng-model="name" required>
+                    <input type="text" name="name" class="form-control" value="" ng-model="name" id="name" required>
                 </div>
                 <div class="input">
                     <label>Email</label>
-                    <input type="email" name="email" class="form-control" value="" ng-model="email" required>
+                    <input type="email" name="email" class="form-control" value="" ng-model="email" ng-blur="validateEmail()" id="email" required>
                 </div>   
                 <div class="form-group">
                     <label>Password</label>
-                    <input type="password" name="password" class="form-control" value="" ng-model="password" required>
+                    <input type="password" name="password" class="form-control" value="" ng-model="password" id="password" required>
                 </div>
                 <div class="err">
                     <span class="err" 
-                          ng-show="register.username.$touched && register.username.$invalid || 
-                                   register.name.$touched && regsiter.name.$invalid ||
-                                   register.email.$touched && register.email.$invalid || 
-                                   register.password.$touched && register.password.$invalid">
-                        <span ng-show="register.username.$error.required">Username is required.<br></span>
-                        <span ng-show="register.name.$error.required">Name is required.<br></span>
-                        <span ng-show="register.email.$error.required">Email is required.<br></span>
+                          ng-show="register.username.$pristine||regsiter.name.$pristine||regsiter.email.$pristine||register.email.$touched&&register.email.$invalid||register.password.$pristine">
+                        <span ng-show="register.username.$pristine">Username is required.<br></span>
+                        <span ng-show="regsiter.name.$pristine">Name is required.<br></span>
+                        <span ng-show="register.email.$pristine">Email is required.<br></span>
                         <span ng-show="register.email.$error.email">Invalid email address.<br></span>   
-                        <span ng-show="regsiter.password.$error.required">Password is required.<br></span>
-                        <span ng-show="register.password.$error.password">Passowrd is invalid.</span>
+                        <span ng-show="regsiter.password.$pristine">Password is required.<br></span>
                     </span>
+                    <!-- 
+                        START
+                        Validate username and email which needs mysql.
+                        Step 1: Create cookies once field has been filled out. COMPLETE
+                        Step 2: Create a sql connection in backend.
+                        Step 3: Get information from cookies, and validate in backend.
+                        Step 4: Create validation boolean cookies in backend which displays result of validation.
+                        Step 5: Get validation boolean cookies and process, and delete validation boolean cookies.
+                            If true: Close mysql connection in backend.
+                            If false: Return error, clear error fields, disable submit btn, delete boolean cookies AND error value cookie(s). 
+                            Close sql connection. Once field refilled, start from step one, but do not make a cookie for a successful validation value.
+	                    END
+                    -->
+                    <script>
+                        angular.module('register', []).controller('myCtrl', function($scope) {
+                            $scope.validateUsername = function() {
+                                if (register.username.$dirty) {
+                                    document.cookie +=  "username = " + document.getElementById("username").value + "; ";
+                                } else {
+                                    window.location.assign("https://shanmuga1980.github.io/abunchofrandomstuff/login-signup/signup.html")
+                                };
+                            };
+                            $scope.validateEmail = function() {
+                                if (register.email.$dirty) {
+                                    document.cookie += "email = " + document.getElementById("email").value + "; ";
+                                } else {
+                                    window.location.assign("https://shanmuga1980.github.io/abunchofrandomstuff/login-signup/signup.html")
+                                };
+                            };
+                        });
+                    </script> 
                 </div>
                 <span id="dateTime">                   
                 </span>
