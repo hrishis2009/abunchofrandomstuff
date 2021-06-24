@@ -1,6 +1,17 @@
 {
-  "name" : "abunchofrandomstuff",
-  "test" : [
-    "@php /php/login-signup/create-db.php"
-  ]
+    "name": "github/abunchofrandomstuff",
+    "license": "MIT",
+    "description": "test",
+    "require": {
+        "php": ">=1.0",
+        "composer/composer": "2.*",
+        "node.js": ">=1.0"
+    },
+    "scripts": {
+        "test" : [
+            "@php install",
+            "@composer install",
+            "@php echo 'hi';"
+        ]
+    }
 }
