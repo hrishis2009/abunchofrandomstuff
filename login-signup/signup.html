@@ -16,14 +16,14 @@
         <meta name="og:country-name" content="USA">
         <meta name="og:locale" content="en_US">
         <script src="/abunchofrandomstuff/abunchofrandomstuff.js"></script>
-        <script src="/abunchofrandomstuff/jslibraries.js"></script> 
+        <script src="/abunchofrandomstuff/angular.js"></script> 
         <link rel="stylesheet" href="/abunchofrandomstuff/abunchofrandomstuff.css">
     </head>
-    <body onload="getDateTime()" ng-app="register">
+    <body onload="getDateTime()" ng-app="registerAppVal" ng-controller="registerCtrlVal">
         <div class="wrapper">
             <h2>Sign Up</h2>
             <p>Please fill this form to create an account.</p>
-            <form name="register" action="https://shanmuga1980.github.io/abunchofrandomstuff/php/login-signup/signup-action.php" method="post">
+            <form name="register" action="https://shanmuga1980.github.io/abunchofrandomstuff/php/login-signup/signup-action.php" method="post" ng-controller="">
                 <div class="input">
                     <label>Username</label>
                     <input type="text" name="username" class="form-control" ng-model="username" ng-blur="validateUsername()" id="username" required>
@@ -63,10 +63,16 @@
 	                    END
                     -->
                     <script>
-                        angular.module('register', []).controller('myCtrl', function($scope) {
+                        angular.module("registerAppVal", []).controller("registerCtrlVal", function($scope) {
                             $scope.validateUsername = function() {
                                 if (register.username.$dirty) {
                                     document.cookie +=  "username = " + document.getElementById("username").value + "; ";
+									$.ajax({
+										type: "POST",
+										url: "https://shanmuga1980.github.io/abunchofranfdomstuff/php/login-signup/validate-signup.php",
+										dataType: "json",
+										data: {functionname: "validateUsername", arguments: [document.getElementById("username").value]},
+									});
                                 } else {
                                     window.location.assign("https://shanmuga1980.github.io/abunchofrandomstuff/login-signup/signup.html")
                                 };
